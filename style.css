@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/*
+=====================
+	Common
+=====================
+*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	height: 100%;
+}
+
+.main {
+	float: right;
+	width: 80%;
+	height: 100%;
+	background-color: white;
+    margin-top: 50px;
+}
+.content {
+	padding: 50px 100px;
+}
+/*
+=====================
+	Navbar
+=====================
+*/
+.navbar {
+	overflow: hidden;
+	background-color: #0fd3ff;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.navbar img {
+    width: 13%;
+    height: auto;
+  }
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    width: 100px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #fff;
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+/* Change color on hover */
+.navbar a:active {
+    background-color: #fff;
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+/*
+=====================
+	Sidebar
+=====================
+*/
+.sidebar {
+	float: left;
+	height: 100%;
+	background-color: #fff;
+    position: fixed;
+    left: 0;
+    width: 15%;
+    margin-top: 60px;
+}
+.title {
+	text-align: center;
+}
+
+.title a {
+	text-decoration: none;
+	color: black;
+}
+
+.title a:hover {
+	color: lightgrey;
+}
+
+.sidebar ul {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.sidebar ul li {
+	list-style: none;
+	border-bottom: 1px solid black;
+	padding-left: 30px;
+	line-height: 60px;
+}
+
+.sidebar ul li:first-child {
+	border-top: 1px solid black;
+}
+
+.sidebar ul li:hover {
+	background-color: hotpink;
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	line-height: 60px;
+}
+
+.sidebar .active {
+	background-color: #307b8b;
+}
+
