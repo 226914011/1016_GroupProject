@@ -48,6 +48,10 @@ body {
     transition: top 0.3s;
 }
 
+.navbar-fixed-top{
+	position: fixed;
+}
+
 /* Style the navigation bar links */
 .navbar a {
     float: left;

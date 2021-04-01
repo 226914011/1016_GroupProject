@@ -25,15 +25,16 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.sidebar a').each(function () {
+    $('.sidebar a').not(".title").each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.sidebar ul li a').removeClass("active");
-            currLink.addClass("active");
+        var value = 300;
+        if (refElement.position().top-value <= scrollPos && refElement.position().top-value + refElement.height() > scrollPos) {
+            $('.sidebar ul li a').parents('li, ul').removeClass("active");
+            currLink.parents('li, ul').addClass("active");
         }
         else{
-            currLink.removeClass("active");
+            currLink.parents('li, ul').removeClass("active");
         }
     });
 }
