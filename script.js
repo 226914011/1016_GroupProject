@@ -6,11 +6,11 @@ $(document).ready(function () {
         e.preventDefault();
         $(document).off("scroll");
         
-        $('a').each(function () {
+        $('li').each(function () {
             $(this).removeClass('active');
         })
-        $(this).addClass('active');
-      
+        $(this).parents('li, ul').addClass('active');
+     
         var target = this.hash,
             menu = target;
         $target = $(target);
@@ -25,11 +25,11 @@ $(document).ready(function () {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#menu-center a').each(function () {
+    $('.sidebar a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center ul li a').removeClass("active");
+            $('.sidebar ul li a').removeClass("active");
             currLink.addClass("active");
         }
         else{
