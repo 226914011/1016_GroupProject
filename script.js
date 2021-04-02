@@ -38,3 +38,21 @@ function onScroll(event){
         }
     });
 }
+/*
+//Sticky Navbar, active if nesscery
+$(document).ready(function () {
+
+    var menu = $('.navbar');
+    var origOffsetY = menu.offset().top;
+
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY) {
+            $(menu).addClass('navbar-fixed-top');
+        } else {
+            $(menu).removeClass('navbar-fixed-top');
+        }
+    }
+    // Anytime the document is scrolled act on it
+    document.onscroll = scroll;
+
+});*/
