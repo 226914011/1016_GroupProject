@@ -19,7 +19,8 @@ body {
 }
 
 hr {
-  border-top: 1px solid lightgrey;
+	color:  #e6e5e5 ;
+	border-top: 1px solid #e6e5e5;
 }
 
 .container {
@@ -27,7 +28,7 @@ hr {
 }
 
 .main {
-	float: right;
+	/*float: right;*/
 	width: 80%;
 	height: 100%;
 	background-color: white;

@@ -1,57 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Fk you</title>
+	<title>About Us</title>
     <meta charset="utf-8">
+	<!--
+	Key Words
+	-->
 	<meta name = "keywords" content = "Web page, design,  
 		XHTML, tutorial, personal, help, index, form, 
 		contact, feedback, list, links, frame, deitel" />
 
+	<!--
+	Description
+	-->
 	<meta name = "description" content = "This Web site will 
 		help you learn the basics of XHTML and Web page design 
 		through the use of interactive examples and 
 		instruction." />
-	<link rel="stylesheet" href="style.css">
+
+	<!--
+	Link css,javascript and icon
+	-->
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
+    <link rel="icon" href="image/page_icon.png">
 </head>
+
+<!--
+	Main page
+-->
 <body id="top">
+	<font color="black">
 	<div class="container">
-		<p align="center"><img src="icon.gif" alt="Icon"></p>
+		<!--
+		Icon
+		-->
+		<p align="center"><img src="image/icon.gif" alt="Icon"></p>
+
+		<!--
+		Navigation bar
+		-->
         <div class="navbar">
-        	<a class="active" href="#Home">Home</a>
-            <a href="#aboutus">About Us</a>
-            <a href="#whatsnew">What's new</a>
-			<a href="#form">What's new</a>
-            <a href="#" class="right">Search</a>
+        	<a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="main.html">What's new</a>
+			<a href="form.html">Feedback</a>
+            <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
 		</div>
+
+		<!--
+		Side-navigation bar
+		-->
 		<div class="sidebar">
 			<h4 class="title"><a class="title"href="#top">IoT</a></h4>
 			<ul><hr>
 				<li class="active"><a href="#Introduction"><font color="black" size="4">Introduction</font></a></li>
-				<li><a href="#layer1"><font color="black" size="4">Network Layer</font></a></li>
+				<li><a href="#layer1"><font size="4">Network Layer</font></a></li>
 				<ul>
-					<li><a href="#l1sub1"><font color="black" size="3">Wireless</font></a></li>
-					<li><a href="#l1sub2"><font color="black" size="3">---Wire</font></a></li>
+					<li><a href="#l1sub1"><font size="3">&emsp;&emsp;Wireless</font></a></li>
+					<li><a href="#l1sub2"><font size="3">&emsp;&emsp;Wire</font></a></li>
 				</ul>
-				<li><a href="#layer2"><font color="black" size="4">Application Layer</font></a></li>
+				<li><a href="#layer2"><font size="4">Application Layer</font></a></li>
 			</ul>
 		</div>
-		<div class="main">
-			<div class="content">
-				<hr>
+
+		<!--
+		Main content
+		-->
+		<table border="0" width="80%" align="right">
+		<tr><td>
+			<div class="main">
+				<div class="content">
 					<h1>The Internet of Things</h1><br>
 				<div id="Introduction">
 					<h2>Introduction</h2>
-					<p>The Internet of Things, through its broadest definition, is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet, ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.</p>
+					<hr>
+					<p>The Internet of Things --<b> IoT </b>-- through its broadest definition, is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet, ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.</p>
+					<p><i>Here's a viedo introducing 5G!</i></p>
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GEx_d0SjvS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<font color="gray" size="4">
+					<p><s><i>Curator: I love this viedo very much!</i></s></p>
+					</font>
 					<br>
 				</div>
 				<div id="layer1">
 					<h2>Network Layer</h2>
-					<div id="Wireless"> 
-						<h3>
-							Wireless
-						</h3>
+					<hr>
+					<div id="l1sub1"> 
+						<h3><u>Wireless</u></h3>
 						<ul>
 							<li><h4>RFID</h4></li>
 							<ol>
@@ -113,27 +150,44 @@
 							</ol>
 						</ul>
 					</div>
+					<div id="l1sub2">
+						<h3><u>Wire</u></h3>
+						<p>Here is some random text.</p>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque condimentum aliquam. Nulla vitae odio augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non arcu ut est elementum porttitor. Vestibulum turpis sem, vulputate ac dui placerat, malesuada suscipit ligula. Etiam varius ac nibh ut eleifend. Suspendisse pulvinar sit amet leo sed pellentesque. Etiam ut arcu ante. </p>
+						<p>Nulla dolor nisl, ultricies at maximus ut, pulvinar sed neque. Vivamus iaculis quis dolor non hendrerit. Aenean eget dui lectus. Maecenas nec iaculis sem. Donec bibendum dapibus leo non iaculis. Donec faucibus vehicula dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque convallis consectetur leo ac rutrum. Integer posuere, mauris id pharetra convallis, odio urna mollis diam, vitae sagittis odio massa in metus. Duis ornare ipsum ante. </p>
+						<p>Aenean fringilla, massa pharetra pellentesque ornare, ex nisl tincidunt mi, varius dictum leo ligula pretium neque. Vivamus lobortis orci a vehicula porttitor. Sed vel lectus orci. Praesent rutrum augue quis metus tempus aliquet. Pellentesque non erat purus. Cras tincidunt, est sit amet aliquet maximus, turpis est interdum est, in ultricies metus nibh nec felis. Morbi id eros ac purus congue lacinia id ac diam. Integer id sodales est. Nam vulputate mattis ornare. Quisque turpis leo, dictum eget vestibulum sit amet, mattis nec lacus. Vivamus purus quam, tristique ut mi dignissim, finibus consectetur metus. Fusce vel varius felis, nec semper lacus. Integer egestas sed turpis et molestie. Nulla pulvinar libero ut accumsan gravida. </p>
+						<br>
+					</div>
 				</div>
 				<div id="layer2">
 					<h2>Application Layer</h2>
-					<br>
+					<hr>
 					<p>Here is some welcome text.</p>
 					<br>
 					<p>Sed in dui massa. Aenean ac lectus finibus, semper justo eget, congue sem. Mauris erat leo, porttitor quis pharetra vitae, rutrum sed velit. Praesent vel tellus ligula. Nunc convallis turpis in est condimentum, a vestibulum diam pharetra. Sed orci enim, finibus tempus faucibus vel, maximus at erat. Integer at urna est. Sed sagittis mi ut neque malesuada accumsan. Nulla posuere, odio vel tristique ultricies, nibh mi lacinia massa, et sollicitudin augue diam congue ligula. Nunc volutpat ligula eget leo laoreet, in rutrum quam ultricies. Nulla dapibus tempus lectus, vel tempus ex efficitur id. Phasellus lacus purus, dapibus in dolor pharetra, sagittis mattis nisl. Donec vestibulum accumsan orci, et aliquet nunc ornare in. Quisque aliquet nisi nec molestie sagittis. Donec rutrum quam felis, non pharetra nisl tempus at. </p>
 					<p>Aliquam viverra volutpat tincidunt. Integer sit amet leo dictum, euismod neque nec, posuere arcu. Cras maximus in libero cursus porta. Aliquam ac neque pellentesque, dapibus justo vel, convallis elit. Cras gravida tortor nec neque fringilla, eget suscipit diam interdum. Aliquam bibendum ex a nibh sollicitudin aliquet. Sed vestibulum ante massa, id tincidunt magna maximus ut. Ut dictum finibus ipsum, vitae aliquet sapien lobortis vel. In rhoncus ante eget massa tincidunt, ac iaculis lacus lobortis. In faucibus ex non est commodo elementum. Praesent vel malesuada neque. Curabitur in lorem in dolor placerat finibus et non velit. Nunc ac efficitur ligula. Cras fermentum, lorem a vulputate molestie, neque nunc tincidunt dolor, eget pretium est nisi id urna. Phasellus ut nisl egestas, imperdiet purus eget, rhoncus eros. Sed volutpat at quam id maximus. </p>
+				</div><hr>
+				<div id=>
+
 				</div>
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<footer class="footer">
+				<br><br><br>
+					<p align="center">
+					<span>© 2021 <a href="main.html">IIT NEWS</a></span>
+					<span>·</span>
+					<span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
+					<span>·</span>
+					<span>All rights reserved.</span>
+					<!--
+					<a href="" rel="noopener" target="_blank"></a>
+					-->
+					</p>
+				</footer>
 			</div>
 		</div>
-		<!--
-		<footer class="footer">
-			<span>© 2021 <a href="main.html">IIT NEWS</a></span>
-			<span>·</span>
-			<span>Powered by <a href="" rel="noopener noreferrer" target="_blank">Hugo</a></span>
-			<span>·</span>
-			<span>Theme <a href="" rel="noopener" target="_blank">PaperMod</a></span>
-		</footer>
-		-->
+		</tr></td>
+		</table>
 		<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
 			<button class="top-link" id="top-link" type="button" accesskey="g" style="visibility: visible; opacity: 1;">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
@@ -142,5 +196,6 @@
 			</button>
 		</a>
 	</div>
+	</font>
 </body>
 </html>
