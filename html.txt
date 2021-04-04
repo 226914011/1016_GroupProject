@@ -1,0 +1,78 @@
+<H1>
+<H2>
+<H3>
+<H4>
+<H5>
+<H6>
+<B>
+<I>
+<U>
+<S>
+<P>
+<BR>
+<OL>
+<LI>
+<UL>
+<HR>
+ALIGN="LEFT"
+ALIGN="CENTER"
+ALIGN="RIGHT"
+ALIGN="JUSTIFY"
+<img src="url" alt="Alternative text" width="### px" height="### px" >
+COLOR: HEX
+COLOR: NAME
+COLOR: RGB
+BACKGROUND IMAGE
+<a href="url" target="_blank" >
+TARGET: _blank, _self(default), _parent, _top
+HREF:Web address, a local file, a folder, email address
+Use tgt:
+<A HREF="#section-name">link-text</A>
+<A NAME="section-name">Destination</A>
+<img usemap="#mapname">
+<map name="mapname"> 
+<area shape="rect" coords="x1,y1,x2,y2" href="url"> 
+<area shape="circle" coords="cx,cy,r" ...> 
+<area shape="poly" coords="x1,y1,x2, y2, ..., xn,yn" ...> 
+</map>
+<TABLE >< /TABLE >
+<TR>  </TR>
+<TD>  </TD>
+<CAPTION>  </CAPTION>
+<TH>  </TH>
+<TABLE BORDER = "X"> 
+<TD COLSPAN ="X"> 
+<TD ROWSPAN ="X">
+
+<form name="form_name" method="POST" action="URL">
+<INPUT TYPE="text" NAME="p_user" SIZE="15"> 
+<INPUT TYPE="password" NAME="p_password"> 
+<P> What is your favourite sport(s)?<BR> 
+<INPUT TYPE="checkbox" NAME="p_sport" VALUE="football"> 
+Football<BR> 
+<INPUT TYPE="checkbox" NAME="p_sport" VALUE="baseball" CHECKED> 
+Baseball<BR> 
+<INPUT TYPE="checkbox" NAME="p_sport" VALUE="basketball"> 
+Basketball<BR> 
+</P> 
+
+<P>What is your gender?<BR> 
+<INPUT TYPE="radio" NAME="p_gender" VALUE="m" CHECKED> 
+Male<BR> 
+<INPUT TYPE="radio" NAME="p_gender" VALUE="f"> 
+Female<BR> </P> 
+
+<TEXTAREA NAME ="p_comment" ROWS ="4" COLS ="40"> Default text here... </TEXTAREA>
+
+<SELECT NAME="p_fruit" SIZE=4> 
+<OPTION VALUE="apple"> Apple</OPTION> 
+<OPTION VALUE="banana" SELECTED> Banana</OPTION> 
+<OPTION VALUE="pineapple"> Pineapple </OPTION> 
+<OPTION VALUE="orange"> Orange</OPTION> 
+</SELECT>
+
+<INPUT TYPE="hidden "NAME="p_secret" VALUE="This is secret!">
+
+<INPUT TYPE="reset" VALUE="Reset the form">
+
+<INPUT TYPE="submit" VALUE="Execute">
