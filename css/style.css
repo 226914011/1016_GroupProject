@@ -42,10 +42,11 @@ hr {
 =====================
 	Navbar
 =====================
+#2acbff
 */
 .navbar {
 	overflow: hidden;
-	background-color: #0fd3ff;
+	background-color: #48bbfd;
     margin: 0 auto;
     position: relative;
     top: 0;
@@ -127,11 +128,11 @@ hr {
 }
 
 .sidebar ul li:hover {
-	background-color: hotpink;
+	background-color: #ffcec7;
 }
 
 .sidebar ul li.active {
-	background-color: #c9cbc9;
+	background-color: #cef0ce;
 }
 
 .sidebar ul li a {
