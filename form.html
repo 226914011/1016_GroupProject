@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback</title>
+    <meta charset="utf-8">
+	<!--
+	Key Words
+	-->
+	<meta name = "keywords" content = "Web page, design,  
+		XHTML, tutorial, personal, help, index, form, 
+		contact, feedback, list, links, frame, deitel" />
+
+	<!--
+	Description
+	-->
+	<meta name = "description" content = "This Web site will 
+		help you learn the basics of XHTML and Web page design 
+		through the use of interactive examples and 
+		instruction." />
+
+	<!--
+	Link css,javascript and icon
+	-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <link rel="icon" href="image/page_icon.png">
+</head>
+
+<!--
+	Main page
+-->
+<body id="top" background="image/we_need_you.png">
+	<font color="black">
+	<div class="container">
+		<!--
+		Icon
+		-->
+		<p align="center"><img src="image/icon.gif" alt="Icon"></p>
+
+		<!--
+		Navigation bar
+		-->
+        <div class="navbar">
+        	<a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="main.html">What's new</a>
+			<a href="form.html">Feedback</a>
+            <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
+		</div>
+		<!--
+		Main content
+		-->
+        
+		<table border="0" width="100%" align="center">
+            <tr>
+                <caption><h1 align= center>Feedback Form</h1></caption>
+                <table class="form" border="0" width="40%" align="center" bgcolor="white" cellspacing="10" cellpadding="5">
+                    <colgroup>
+                        <col width="16%">
+                        <col width="17%">
+                        <col width="16%">
+                        <col width="17%">
+                        <col width="16%">
+                        <col width="17%">
+                    </colgroup>
+                    <!--sc.chan@cpce-polyu.edu.hk-->
+                    <form action="mailto:a226914011@gmail.com" method="POST" enctype="multipart/form-data">
+                    <input type = "hidden" name = "Info" value = "IIT Class 202 Group X Feedback Form"/>
+                    <tr>
+                        <td colspan="3">
+                        <label for="fname">Name<font size="2" color="red">*</font></label><br>
+                        <input type="text" size="30" required id="fname" name="firstname" placeholder="Your first name">
+                        <br>
+                        </td>
+                        <td colspan="3">
+                        <label for="lname"></label><br>
+                        <input type="text" size="30" required id="lname" name="lastname" placeholder="Your last name">
+                        <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                        Gender<font size="2" color="red">*</font>
+                        <table border="0" width="30%">
+                            <tr>
+                                <td>
+                                <label for="male">Male</label>
+                                </td>
+                                <td>
+                                <input type="radio" name="gender" id="male" value="male" checked >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <label for="female">Female</label>
+                                </td>
+                                <td>
+                                <input type="radio" name="gender" id="female" value="female">
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                        <td colspan="1">
+                            <label for="age">Age</label>
+                            <input type="number" name="age" id="age" min="1" max="200" step="1" size="5">
+                        </td>
+                        <td colspan="4">
+                            <label for="email">Email<font size="2" color="red">*</font></label><br>
+                            <input type="email" size="35" required name="email" id="email" placeholder="e.g. youremail@gmail.com">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <label for="aname">Article name<font size="2" color="red">*</font></label>
+                        <select id="aname" name="aname">
+                            <option value="IoT">IoT</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        </td>
+                        <td colspan="4">
+                            <table>
+                                <tr>
+                                    <label for="fun">&emsp;&emsp;&emsp;&emsp;Interestingness<font size="2" color="red">*</font></label>
+                                </tr>
+                                <tr>
+                                    <td>Boring</td>
+                                    <td><input type="radio" name="fun" id="1" value="1"></td>
+                                    <td><input type="radio" name="fun" id="2" value="2"></td>
+                                    <td><input type="radio" name="fun" id="3" value="3"></td>
+                                    <td><input type="radio" name="fun" id="4" value="4"></td>
+                                    <td><input type="radio" name="fun" id="5" value="5"></td>
+                                    <td>Interesting</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>&nbsp;&nbsp;1</td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>&nbsp;&nbsp;5</td>
+                                </tr>
+                            
+                            
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                        <label for="Message">Message<font size="2" color="red">*</font></label><br>
+                        <textarea id="Message" name="Message" rows="5" cols="50">This site is awesome!</textarea><br>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input type="submit" value="Submit">
+                        </td>
+                        <td colspan="1">
+                            <input type="reset" value="Reset From">
+                        </td>
+                    </tr>
+                    </p>
+                    </form>
+                <tr><td colspan="6"><p><font size="2" color="red">*Required to fill in.</font></p></td></tr>
+                </table>
+            </tr>
+            <tr><td>
+                <footer class="footer">
+                <br><br><br>
+                    <p align="center">
+                    <span>© 2021 <a href="main.html">IIT NEWS</a></span>
+                    <span>·</span>
+                    <span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
+                    <span>·</span>
+                    <span>All rights reserved.</span>
+                    <!--
+                    <a href="" rel="noopener" target="_blank"></a>
+                    -->
+                    </p>
+                </footer>
+		    </tr></td>
+		</table>
+		<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+			<button class="top-link" id="top-link" type="button" accesskey="g" style="visibility: visible; opacity: 1;">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+					<path d="M12 6H0l6-6z"></path>
+				</svg>
+			</button>
+		</a>
+    </div>
+	</font>
+</body>
+</html>

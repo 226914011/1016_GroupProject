@@ -42,7 +42,6 @@ hr {
 =====================
 	Navbar
 =====================
-#2acbff
 */
 .navbar {
 	overflow: hidden;
@@ -142,9 +141,20 @@ hr {
 	line-height: 60px;
 }
 
+/*
+=====================
+	Top Icon
+=====================
+*/
 .top-link{
 	font-size:12px;
 }
+
+/*
+=====================
+	Sidebar
+=====================
+*/
 .footer{
 	font-size:12px;
 	position:relative;
