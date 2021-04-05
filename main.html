@@ -77,7 +77,7 @@
 					<h2>Introduction</h2>
 					<hr>
 					<p>The Internet of Things --<b> IoT </b>-- through its broadest definition, is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet, ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.</p>
-					<p><i>Here's a viedo introducing 5G!</i></p>
+					<p><i>Here's a video introducing 5G!</i></p>
 					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GEx_d0SjvS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<font color="gray" size="4">
 					<p><s><i>Curator: I love this viedo very much!</i></s></p>
@@ -112,24 +112,6 @@
 									<li>Read range: up to 12m</li>
 									<li>Pros: faster data transfer rates</li>
 									<li>cons: more sensitive to interference from metals/ liquids/ electromagnetic signals</li>
-									<ol type="a">
-										<li>Active</li>
-										<ul>
-											<li>have own transmitter and power source (battery) onboard the tag</li>
-											<li>Read range: up to 100m</li>
-											<ul>
-												<li>Transponders: “wake up” and transmit data when they receive a radio signal from a reader</li>
-												<li>Beacons: emit a signal at a pre-set interval</li>
-											</ul>
-											<li>Pros: Long read range, low infrastructure cost (vs passive RFID), large memory capacity, high data transmission rates</li>
-										</ul>
-										<li>Passive </li>
-										<ul>
-											<li>ultra-high frequency</li>
-											<li>Read range: Near contact-25 metres</li>
-											<li>Pros: Long read range, low cost per tag, wide variety of tag sizes and shapes, global standards, high data transmission rates</li>
-										</ul>
-									</ol>
 								</ul><br>
 								<li>Battery-Assisted Passive (BAP) RFID</li>
 								<ul>
@@ -138,35 +120,226 @@
 									<li>x own transmitters</li>
 								</ul>
 							</ol>
-							<li><h4>RFID</h4></li>
-							<ol>
-								<li>Low frequency RFID</li>
+							<li><h4>Bluetooth mesh networking</h4></li>
+							<p>It is a computer mesh networking standard based on Bluetooth Low Energy. It allows communication of devices over Bluetooth radio. Bluetooth 4.0 and Bluetooth 5.0 are the most commonly used Bluetooth version currently.</p>
+              <table border="1">
+              <tr>
+                <th></th>
+                <th>Bluetooth 4.0</th>
+                <th>Bluetooth 5.0</th>
+              </tr>
+              <tr>
+                <th>Range</th>
+                <th>60m</th>
+                <th>up to 1.5km</th>
+              </tr>
+              <tr>
+                <th>Speed</th>
+                <th>25Mbit/s</th>
+                <th>50Mbit/s</th>
+              </tr>
+              <tr>
+                <th>Date transfer rate</th>
+                <th>1Mb/s</th>
+                <th>2Mb/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
 								<ul>
-									<li>30-300 KHz</li>
-									<li>Read range: up to 10cm</li>
-									<li>Pros: perform better in the presence of metal/ liquids</li>
-									<li>Cons: short read range, slower data read range</li>
+									<li>easy to set up the network</li>
+                  <li>allows many-to-many device communication</li>
+                  <li>wide adoption of Bluetooth (many smart devices support Bluetooth)</li>
+                  <li>low power consumption</li>
 								</ul>
-							</ol>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>expensive to implement</li>
+                <li>complicated topologies</li>
+                <li>difficult to maintain network</li>
+                <li>easy to have redundant connections</li>
+                </ul>
+                <li><h4>WiFi</h4></li>
+							<p>It is a technology for the local area networking, which is based on wireless internet protocol. Devices can connect through a shared access point or connect individual devices directly by radio waves.</p>
+              <br>
+              For IEEE 802.11ah standard:
+              <p>Range: up to 1000m</p>
+              <p>Frequency: sub-gigahertz band</p>
+              <p>Data transfer rate: 78 Mbps (16 MHz in Sub-1 GHz)</p>
+              <p>Power saving: Traffic Indication Map (TIM), Delivery TIM (DTIM)</p>
+                <br>
+                Advantages:
+                <ul>
+                <li>flexible than wired network</li>
+                <li>easy to set up and connect</li>
+                <li>low energy consumption (down to 100 milliwatts)</li>
+                <li>large coverage area (up to 1000m)</li>
+                <li>high data rate (up to 347 Mbps)</li>
+                </ul>
+                <p>IoT applications: autonomous lightning, smart security, smart home thermostats</p> 
+                <br>
+                <li><h4>Z-wave</h4></li>
+							<p>Z-Wave is a wireless networking protocol for home automation. It's a mesh network that uses low-energy radio waves to connect devices.</p>
+              <br>
+              <table border="1">
+              <tr>
+                <th>Range</th>
+                <th>100meters</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>908.42 MHz</th>
+              </tr>
+              <tr>
+                <th>Data rate</th>
+                <th>9600 bits/s and 40 kbits/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
+								<ul>
+									<li>Installation is simple</li>
+                  <li>No additional cabling is needed for installation</li>
+                  <li>The wireless signal is unaffected by other devices</li>
+                  <li>Efficiencies in energy</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>Distance of signal transmission is short</li>
+                <li>Number of Limited nodes is 232</li>
+                </ul>
+                <br>
+                <li><h4>5G</h4></li>
+							<p>It is the fifth generation technology standard for cellular networks. Devices are connected by radio waves through a local antenna. 5G networks can operate on up to three frequency bands including low, medium and high.</p>
+              <br>
+              <p>Frequency: </p>
+              <ul>
+              <li>Low-band 5G: 600–850 MHz</li>
+              <li>Mid-band 5G: 2.5–3.7 GHz</li>
+              <li>High-band 5G: 25–39 GHz</li>
+              </ul>
+              <p>Download speed: </p>
+              <ul>
+              <li>Low-band 5G: 30–250Mbit/s</li>
+              <li>Mid-band 5G: 100–900 Mbit/s</li>
+              <li>High-band 5G: around 1 Gbit/s</li>
+              </ul>
+              <p>Latency: down to 1ms</p>
+              <p>Range: depends on the frequency being used, can cover couple hundred kilometers</p>
+              <br>
+              Advantages:
+								<ul>
+									<li>Greater bandwidth</li>
+                  <li>Higher download speeds</li>
+                  <li>Low latency</li>
+                  <li>Can connect a large number of devices</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>It is still under process</li>
+                <li>High cost for infrastructure</li>
+                <li>Many old devices are not compatible to 5G</li>
+                <li>Lack of technological support in many places</li>
+                </ul>
+                <li><h4>LPWAN</h4></li>
+							<p>A low-power broad-area network (LPWAN) is a wireless telecommunications wide area network that allows long-range communications at a low bit rate. It is designed for connecting business or users.</p>
+              <br>
+              <table border="1">
+              <tr>
+                <th>Range</th>
+                <th>2 km to 1,000 km</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>100 Hz</th>
+              </tr>
+              <tr>
+                <th>Data transmission speed</th>
+                <th>0.3 kbit/s and 50 kbit/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
+								<ul>
+									<li>Low power usage</li>
+                  <li>Batteries are cost-effective</li>
+                  <li>Long-distance</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>Delay problem is serious</li>
+                <li>Low data rate</li>
+                <li>High latency</li>
+                </ul>
 						</ul>
 					</div>
 					<div id="l1sub2">
 						<h3><u>Wire</u></h3>
-						<p>Here is some random text.</p>
+            <ul>
+            <li><h4>Ethernet</h4></li>
+            </ul>
+						<p>Ethernet is a wired computer networking technology that is widely used in local area networks (LANs), regional area networks (MANs), and wide area networks (WANs).</p>
 						<br>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque condimentum aliquam. Nulla vitae odio augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non arcu ut est elementum porttitor. Vestibulum turpis sem, vulputate ac dui placerat, malesuada suscipit ligula. Etiam varius ac nibh ut eleifend. Suspendisse pulvinar sit amet leo sed pellentesque. Etiam ut arcu ante. </p>
-						<p>Nulla dolor nisl, ultricies at maximus ut, pulvinar sed neque. Vivamus iaculis quis dolor non hendrerit. Aenean eget dui lectus. Maecenas nec iaculis sem. Donec bibendum dapibus leo non iaculis. Donec faucibus vehicula dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque convallis consectetur leo ac rutrum. Integer posuere, mauris id pharetra convallis, odio urna mollis diam, vitae sagittis odio massa in metus. Duis ornare ipsum ante. </p>
-						<p>Aenean fringilla, massa pharetra pellentesque ornare, ex nisl tincidunt mi, varius dictum leo ligula pretium neque. Vivamus lobortis orci a vehicula porttitor. Sed vel lectus orci. Praesent rutrum augue quis metus tempus aliquet. Pellentesque non erat purus. Cras tincidunt, est sit amet aliquet maximus, turpis est interdum est, in ultricies metus nibh nec felis. Morbi id eros ac purus congue lacinia id ac diam. Integer id sodales est. Nam vulputate mattis ornare. Quisque turpis leo, dictum eget vestibulum sit amet, mattis nec lacus. Vivamus purus quam, tristique ut mi dignissim, finibus consectetur metus. Fusce vel varius felis, nec semper lacus. Integer egestas sed turpis et molestie. Nulla pulvinar libero ut accumsan gravida. </p>
+            <table border="1">
+              <tr>
+                <th></th>
+                <th>CAT1-4</th>
+                <th>CAT5-8</th>
+              </tr>
+              <tr>
+                <th>Range</th>
+                <th>100m</th>
+                <th>100m</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>4MHz-20MHz</th>
+                <th>100MHz-2000Mhz</th>
+              </tr>
+              <tr>
+                <th>Date transfer rate</th>
+                <th>4mbps-10gbps</th>
+                <th>100Mbps-250Gbps</th>
+              </tr>
+              </table>
+              <br>
+            Advantages:
+            <ol>
+								<li>Connection speed is high</li>
+                <li>Protection and defense</li>
+                <li>Have supreme reliability</li>
+                </ol>
+						<br>
+            Disadvantages:
+            <ol>
+            <li>lack of portability</li>
+            <li>High cost for Expandability</li>
+            <li>Installation is difficult</li>
+            </ol>
 						<br>
 					</div>
 				</div>
 				<div id="layer2">
 					<h2>Application Layer</h2>
 					<hr>
-					<p>Here is some welcome text.</p>
-					<br>
-					<p>Sed in dui massa. Aenean ac lectus finibus, semper justo eget, congue sem. Mauris erat leo, porttitor quis pharetra vitae, rutrum sed velit. Praesent vel tellus ligula. Nunc convallis turpis in est condimentum, a vestibulum diam pharetra. Sed orci enim, finibus tempus faucibus vel, maximus at erat. Integer at urna est. Sed sagittis mi ut neque malesuada accumsan. Nulla posuere, odio vel tristique ultricies, nibh mi lacinia massa, et sollicitudin augue diam congue ligula. Nunc volutpat ligula eget leo laoreet, in rutrum quam ultricies. Nulla dapibus tempus lectus, vel tempus ex efficitur id. Phasellus lacus purus, dapibus in dolor pharetra, sagittis mattis nisl. Donec vestibulum accumsan orci, et aliquet nunc ornare in. Quisque aliquet nisi nec molestie sagittis. Donec rutrum quam felis, non pharetra nisl tempus at. </p>
-					<p>Aliquam viverra volutpat tincidunt. Integer sit amet leo dictum, euismod neque nec, posuere arcu. Cras maximus in libero cursus porta. Aliquam ac neque pellentesque, dapibus justo vel, convallis elit. Cras gravida tortor nec neque fringilla, eget suscipit diam interdum. Aliquam bibendum ex a nibh sollicitudin aliquet. Sed vestibulum ante massa, id tincidunt magna maximus ut. Ut dictum finibus ipsum, vitae aliquet sapien lobortis vel. In rhoncus ante eget massa tincidunt, ac iaculis lacus lobortis. In faucibus ex non est commodo elementum. Praesent vel malesuada neque. Curabitur in lorem in dolor placerat finibus et non velit. Nunc ac efficitur ligula. Cras fermentum, lorem a vulputate molestie, neque nunc tincidunt dolor, eget pretium est nisi id urna. Phasellus ut nisl egestas, imperdiet purus eget, rhoncus eros. Sed volutpat at quam id maximus. </p>
+          <ul>
+          <li><h4>Definition</h4></li>
+					<p>The application layer is in charge of supplying the user with application-specific services. It specifies uses for the Internet of Things, including smart houses, smart cities, and smart health.</p>
+					<p>The third layer is the application layer. The aim of the application layer is to bring IoT social needs and industrial technologies together. </p>
+          <li><h4>MQTT</h4></li>
+					<p>Message Stream Telemetry Transport: MQTT is a TCP-based publish/subscribe protocol. It was structured primarily as a client/server protocol by IBM. The clients are publishers/subscribers, and the server functions as a TCP broker to which the clients bind. A subject may be published or subscribed to my clients. This contact is done by the broker, whose task is to arrange subscriptions to authenticate the customer for security purposes. </p>
+          <li><h4>Application</h4></li>
+          </ul>
+          <ol>
+            <li>Near Field Communication (NFC) Payment</li>
+            <p>In the retail market, NFC is one of the fastest-growing Internet of Things applications. Customers who use NFC payment do not need to pay with cash or a card; instead, they may make contactless payments with their NFC-enabled smartphones. It limits the amount of time it takes to make a payment while still increasing certainty. On the vendor's side, all that is needed for NFC payment is an NFC payment device.</p>
+            <li>Remote Control Appliances</li>
+            <p>Many different home appliances can now be remotely controlled. Home appliances have been Wifi-enabled, ranging from light bulbs to refrigerators to fans and televisions. You can use this to monitor different functions in your home without ever leaving your bed. </p>
+          </ol>
 				</div><hr>
 				<div id="news">
 					<table align="center" width="75%">
