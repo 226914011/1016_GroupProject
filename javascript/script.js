@@ -38,7 +38,7 @@ function onScroll(event){
         }
     });
 }
-/*
+
 //Sticky Navbar, active if nesscery
 $(document).ready(function () {
 
@@ -55,4 +55,4 @@ $(document).ready(function () {
     // Anytime the document is scrolled act on it
     document.onscroll = scroll;
 
-});*/
+});
