@@ -84,36 +84,114 @@
 					<hr>
 					<div id="l1sub1"> 
 						<h3><u>Wireless</u></h3>
-						<ul>
-							<li><h4>RFID</h4></li>
-							<ol>
-								<li>Low frequency RFID</li>
-								<ul>
-									<li>30-300 KHz</li>
-									<li>Read range: up to 10cm</li>
-									<li>Pros: perform better in the presence of metal/ liquids</li>
-									<li>Cons: short read range, slower data read range</li>
-								</ul><br>
-								<li>High frequency RFID</li>
-								<ul>
-									<li>3-30 MHz</li>
-									<li>Read range: 10cm-1m</li>
-									<li>electronic ticketing/payment/data transfer</li>
-									<li>used in NFC: payment cards, hotel key card</li>
-								</ul><br>
-								<li>Ultra-high frequency RFID</li>
-								<ul>
-									<li>300MHz-3GHz</li>
-									<li>Read range: up to 12m</li>
-									<li>Pros: faster data transfer rates</li>
-									<li>cons: more sensitive to interference from metals/ liquids/ electromagnetic signals</li>
-								</ul><br>
-								<li>Battery-Assisted Passive (BAP) RFID</li>
-								<ul>
-									<li>hybrid type/semi-passive</li>
-									<li>power source -- ensure all captured energy from the reader is used to reflect the signal</li>
-									<li>x own transmitters</li>
-								</ul>
+						<li><h4>RFID (Radio Frequency Identification)</h4></li>
+                <p>RFID refers to a wireless system comprised of two components: tags and readers. The reader has one or more antennas that emit radio waves and receive signals back from the RFID tags. Tags, use radio waves to communicate their identity and other information to nearby readers,  can be passive or active.</p>
+                  <table border="1">
+                    <tr>
+                      <th></th>
+                      <th>Low frequency (LF)</th>
+                      <th>High frequency (HF)</th>
+                      <th>Ultra-high frequency (UHF)</th>
+                    </tr>
+                    <tr>
+                      <th>Range</th>
+                      <th><10 cm</th>
+                      <th>10 cm to 1 m</th>
+                      <th><12 m</th>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <th>30 KHz to 300 KHz</th>
+                      <th>3 MHz to 30 MHz</th>
+                      <th>300 MHz to 3 GHz</th>
+                    </tr>
+                    <tr>
+                      <th>Data transfer rate</th>
+                      <th colspan="3">LF < HF < UHF</th>
+                    </tr>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Ability to transmit through RFID opaque materials</th>
+                      <th>Wide range of transfer rates and read distances; some ability to transmit through RFID opaque materials; allow NFC</th>
+                      <th>Extremely high read distance; Hugh data transfer rates</th>
+                    </tr>
+                    <tr>
+                      <th>Disadvantages</th>
+                      <th>Slower data transfer; low read distance</th>
+                      <th>Not entirely unaffected by RFID opaque materials</th>
+                      <th>Significantly impacted by RFID opaque materials</th>
+                    </tr>
+                    </table>
+            </ul>
+            <ul>
+              <li><h4>NFC (Near Field Communication)</h4></li>
+                <p>NFC enables short-range communication between compatible devices. This requires at least one transmitting device, and another to receive the signal. There are two types of NFC devices, either passive or active.</p>
+                  <table border="1">
+                  <tr>
+                    <th>Range</th>
+                    <th><20 cm</th>
+                  </tr>
+                  <tr>
+                    <th>Speed</th>
+                    <th>13.56MHz</th>
+                  </tr>
+                  <tr>
+                    <th>Data transfer rate</th>
+                    <th>106 kbit/s to 424 kbit/s</th>
+                  </tr>
+                  </table>
+                    <br>
+                    Advantages:
+                      <ul>
+                        <li>Convenience: it merges a mobile device with wallet(s); intuitive to use</li>
+                        <li>Versatility: it is suited for a broad range of industries and uses</li>
+                        <li>Safety: passwords/PIN are used to further protect your information; more secure than a credit card magnetic strip</li>
+                      </ul>
+                      <br>
+                      Disadvantages:
+                      <ul>
+                        <li>Company agreements to use NFC</li>
+                        <li>Security: computer hacking/phone hacking</li>
+                      </ul>
+                                        
+             </ul>
+             <ul>
+              <li><h4>Zigbee</h4></li> 
+                <p>Zigbee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used in home automation, medical device data collection and industrial control systems.</p>
+                  <table border="1">
+                  <tr>
+                    <th>Range</th>
+                    <th>10 m to 20 m (indoors) / 75 m to 300 m (outdoors)</th>
+                  </tr>
+                  <tr>
+                    <th>Speed</th>
+                    <th>2.4 GHz</th>
+                  </tr>
+                    <tr>
+                    <th>Data transfer rate</th>
+                    <th>20 kbps to 250 kbps</th> 
+                  </tr>
+                  </table>
+                     <br>
+                     Advantages:
+                      <ul>
+                        <li>Mesh network structure</li>
+                        <li>Low power consumption: 50 millijoules</li>
+                        <li>Lower cost: open source protocol</li>
+                        <li>Can supports a large network: up to 65000 in a single network</li>
+                        <li>Many devices to choose from: 2500 products certified and 300 million products deployed</li>
+                        <li>Allow fast communication of data and less inference unlike RF and Bluetooth</li>
+                        <li>Does not required internet</li>
+                      </ul>
+                      <br>
+                      Disadvantages:
+                        <ul>
+                          <li>Protocol fragmentation</li>
+                          <li>Low data transmission rate</li>
+                          <li>Not as secure as Wi-Fi</li>
+                          <li>Might not be as great for outdoor wireless communication due to short range and limited coverage</li>
+                        </ul>
+                      </ul>
 							</ol>
 							<li><h4>Bluetooth mesh networking</h4></li>
               <img
