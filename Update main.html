@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IoT</title>
+  <meta charset="utf-8">
+  <!--
+  Key Words
+  -->
+  <meta name = "keywords" content = "Web page, Internet, technology, science, communication, new tech" />
+
+  <!--
+  Description
+  -->
+  <meta name = "description" content = "This Web site is a news portal website which hosts the latest technology news, reviews, and archives that help readers easily understand how technology affects the way they live." />
+
+  <!--
+  Link css,javascript and icon
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+  <link rel="icon" href="image/page_icon.png">
+</head>
+
+<!--
+	Main page
+-->
+<body id="top" BGCOLOR="white">
+	<font color="black">
+	<div class="container">
+		<!--
+		Icon
+		-->
+		<p align="center"><img src="image/icon.gif" alt="Icon"></p>
+
+		<!--
+		Navigation bar
+		-->
+        <div class="navbar">
+        	<a class="active" href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="main.html">What's new</a>
+			<a href="form.html">Feedback</a>
+            <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
+		</div>
+
+		<!--
+		Side-navigation bar
+		-->
+		<div class="sidebar">
+			<h4 class="title"><a class="title"href="#top">IoT</a></h4>
+			<ul><hr>
+				<li class="active"><a href="#Introduction"><font color="black" size="4">Introduction</font></a></li>
+				<li><a href="#layer1"><font size="4">Network Layer</font></a></li>
+				<ul>
+					<li><a href="#l1sub1"><font size="3">&emsp;&emsp;Wireless</font></a></li>
+					<li><a href="#l1sub2"><font size="3">&emsp;&emsp;Wire</font></a></li>
+				</ul>
+				<li><a href="#layer2"><font size="4">Application Layer</font></a></li>
+			</ul>
+		</div>
+
+		<!--
+		Main content
+		-->
+		<table border="0" width="80%" align="right">
+		<tr><td>
+			<div class="main">
+				<div class="content">
+					<h1>The Internet of Things</h1><br>
+				<div id="Introduction">
+					<h2>Introduction</h2>
+					<hr>
+					<p>The Internet of Things --<b> IoT </b>-- through its broadest definition, is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet, ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.</p>
+					<p><i>Here's a video introducing 5G!</i></p>
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GEx_d0SjvS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<font color="gray" size="4">
+					<p><s><i>Curator: I love this viedo very much!</i></s></p>
+					</font>
+					<br>
+				</div>
+				<div id="layer1">
+					<h2>Network Layer</h2>
+					<hr>
+					<div id="l1sub1"> 
+						<h3><u>Wireless</u></h3>
+						<ul>
+					    <li><h4>RFID (Radio Frequency Identification)</h4></li>
+                <p>RFID refers to a wireless system comprised of two components: tags and readers. The reader has one or more antennas that emit radio waves and receive signals back from the RFID tags. Tags, use radio waves to communicate their identity and other information to nearby readers,  can be passive or active.</p>
+                  <table border="1">
+                    <tr>
+                      <th></th>
+                      <th>Low frequency (LF)</th>
+                      <th>High frequency (HF)</th>
+                      <th>Ultra-high frequency (UHF)</th>
+                    </tr>
+                    <tr>
+                      <th>Range</th>
+                      <th><10 cm</th>
+                      <th>10 cm to 1 m</th>
+                      <th><12 m</th>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <th>30 KHz to 300 KHz</th>
+                      <th>3 MHz to 30 MHz</th>
+                      <th>300 MHz to 3 GHz</th>
+                    </tr>
+                    <tr>
+                      <th>Data transfer rate</th>
+                      <th colspan="3">LF < HF < UHF</th>
+                    </tr>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Ability to transmit through RFID opaque materials</th>
+                      <th>Wide range of transfer rates and read distances; some ability to transmit through RFID opaque materials; allow NFC</th>
+                      <th>Extremely high read distance; Hugh data transfer rates</th>
+                    </tr>
+                    <tr>
+                      <th>Disadvantages</th>
+                      <th>Slower data transfer; low read distance</th>
+                      <th>Not entirely unaffected by RFID opaque materials</th>
+                      <th>Significantly impacted by RFID opaque materials</th>
+                    </tr>
+                    </table>
+            </ul>
+            <ul>
+              <li><h4>NFC (Near Field Communication)</h4></li>
+                <p>NFC enables short-range communication between compatible devices. This requires at least one transmitting device, and another to receive the signal. There are two types of NFC devices, either passive or active.</p>
+                  <table border="1">
+                  <tr>
+                    <th>Range</th>
+                    <th><20 cm</th>
+                  </tr>
+                  <tr>
+                    <th>Speed</th>
+                    <th>13.56MHz</th>
+                  </tr>
+                  <tr>
+                    <th>Data transfer rate</th>
+                    <th>106 kbit/s to 424 kbit/s</th>
+                  </tr>
+                  </table>
+                    <br>
+                    Advantages:
+                      <ul>
+                        <li>Convenience: it merges a mobile device with wallet(s); intuitive to use</li>
+                        <li>Versatility: it is suited for a broad range of industries and uses</li>
+                        <li>Safety: passwords/PIN are used to further protect your information; more secure than a credit card magnetic strip</li>
+                      </ul>
+                      <br>
+                      Disadvantages:
+                      <ul>
+                        <li>Company agreements to use NFC</li>
+                        <li>Security: computer hacking/phone hacking</li>
+                      </ul>
+                                        
+             </ul>
+             <ul>
+              <li><h4>Zigbee</h4></li> 
+                <p>Zigbee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used in home automation, medical device data collection and industrial control systems.</p>
+                  <table border="1">
+                  <tr>
+                    <th>Range</th>
+                    <th>10 m to 20 m (indoors) / 75 m to 300 m (outdoors)</th>
+                  </tr>
+                  <tr>
+                    <th>Speed</th>
+                    <th>2.4 GHz</th>
+                  </tr>
+                    <tr>
+                    <th>Data transfer rate</th>
+                    <th>20 kbps to 250 kbps</th> 
+                  </tr>
+                  </table>
+                     <br>
+                     Advantages:
+                      <ul>
+                        <li>Mesh network structure</li>
+                        <li>Low power consumption: 50 millijoules</li>
+                        <li>Lower cost: open source protocol</li>
+                        <li>Can supports a large network: up to 65000 in a single network</li>
+                        <li>Many devices to choose from: 2500 products certified and 300 million products deployed</li>
+                        <li>Allow fast communication of data and less inference unlike RF and Bluetooth</li>
+                        <li>Does not required internet</li>
+                      </ul>
+                      <br>
+                      Disadvantages:
+                        <ul>
+                          <li>Protocol fragmentation</li>
+                          <li>Low data transmission rate</li>
+                          <li>Not as secure as Wi-Fi</li>
+                          <li>Might not be as great for outdoor wireless communication due to short range and limited coverage</li>
+                        </ul>
+                      </ul>
+                            <li><h4>Bluetooth mesh networking</h4></li>
+              <img
+ src="https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929"
+ alt="bluetooth mesh iot"
+ width=560px
+>
+							<p>It is a computer mesh networking standard based on Bluetooth Low Energy. It allows communication of devices over Bluetooth radio. Bluetooth 4.0 and Bluetooth 5.0 are the most commonly used Bluetooth version currently.</p>
+              <table border="1">
+              <tr>
+                <th></th>
+                <th>Bluetooth 4.0</th>
+                <th>Bluetooth 5.0</th>
+              </tr>
+              <tr>
+                <th>Range</th>
+                <th>60m</th>
+                <th>up to 1.5km</th>
+              </tr>
+              <tr>
+                <th>Speed</th>
+                <th>25Mbit/s</th>
+                <th>50Mbit/s</th>
+              </tr>
+              <tr>
+                <th>Date transfer rate</th>
+                <th>1Mb/s</th>
+                <th>2Mb/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
+								<ul>
+									<li>easy to set up the network</li>
+                  <li>allows many-to-many device communication</li>
+                  <li>wide adoption of Bluetooth (many smart devices support Bluetooth)</li>
+                  <li>low power consumption</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>expensive to implement</li>
+                <li>complicated topologies</li>
+                <li>difficult to maintain network</li>
+                <li>easy to have redundant connections</li>
+                </ul>
+                <li><h4>WiFi</h4></li>
+                 <img
+ src="https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png"
+ alt="wifi iot"
+ width=560px
+>
+							<p>It is a technology for the local area networking, which is based on wireless internet protocol. Devices can connect through a shared access point or connect individual devices directly by radio waves.</p>
+              <br>
+              For IEEE 802.11ah standard:
+              <p>Range: up to 1000m</p>
+              <p>Frequency: sub-gigahertz band</p>
+              <p>Data transfer rate: 78 Mbps (16 MHz in Sub-1 GHz)</p>
+              <p>Power saving: Traffic Indication Map (TIM), Delivery TIM (DTIM)</p>
+                <br>
+                Advantages:
+                <ul>
+                <li>flexible than wired network</li>
+                <li>easy to set up and connect</li>
+                <li>low energy consumption (down to 100 milliwatts)</li>
+                <li>large coverage area (up to 1000m)</li>
+                <li>high data rate (up to 347 Mbps)</li>
+                </ul>
+                <p>IoT applications: autonomous lightning, smart security, smart home thermostats</p> 
+                <br>
+                <li><h4>Z-wave</h4></li>
+                <img
+ src="https://www.eenewseurope.com/sites/default/files/styles/inner_article/public/sites/default/files/images/2018-01-08-s20_z_wave_smart_home_sigma_designs_700_platform_sensor.jpg?itok=lzzQA35e"
+ alt="z-wave iot"
+ width=560px
+>
+							<p>Z-Wave is a wireless networking protocol for home automation. It's a mesh network that uses low-energy radio waves to connect devices.</p>
+              <br>
+              <table border="1">
+              <tr>
+                <th>Range</th>
+                <th>100meters</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>908.42 MHz</th>
+              </tr>
+              <tr>
+                <th>Data rate</th>
+                <th>9600 bits/s and 40 kbits/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
+								<ul>
+									<li>Installation is simple</li>
+                  <li>No additional cabling is needed for installation</li>
+                  <li>The wireless signal is unaffected by other devices</li>
+                  <li>Efficiencies in energy</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>Distance of signal transmission is short</li>
+                <li>Number of Limited nodes is 232</li>
+                </ul>
+                <br>
+                <li><h4>5G</h4></li>
+                 <img
+ src="https://www.microwavejournal.com/ext/resources/article-images-2019/Keysight-5G-Iot/Featr.jpg?1612491061"
+ alt="5G IOT"
+ width=400px
+>
+							<p>It is the fifth generation technology standard for cellular networks. Devices are connected by radio waves through a local antenna. 5G networks can operate on up to three frequency bands including low, medium and high.</p>
+              <br>
+              <p>Frequency: </p>
+              <ul>
+              <li>Low-band 5G: 600–850 MHz</li>
+              <li>Mid-band 5G: 2.5–3.7 GHz</li>
+              <li>High-band 5G: 25–39 GHz</li>
+              </ul>
+              <p>Download speed: </p>
+              <ul>
+              <li>Low-band 5G: 30–250Mbit/s</li>
+              <li>Mid-band 5G: 100–900 Mbit/s</li>
+              <li>High-band 5G: around 1 Gbit/s</li>
+              </ul>
+              <p>Latency: down to 1ms</p>
+              <p>Range: depends on the frequency being used, can cover couple hundred kilometers</p>
+              <br>
+              Advantages:
+								<ul>
+									<li>Greater bandwidth</li>
+                  <li>Higher download speeds</li>
+                  <li>Low latency</li>
+                  <li>Can connect a large number of devices</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>It is still under process</li>
+                <li>High cost for infrastructure</li>
+                <li>Many old devices are not compatible to 5G</li>
+                <li>Lack of technological support in many places</li>
+                </ul>
+                <li><h4>LPWAN</h4></li>
+                <img
+ src="https://40uu5c99f3a2ja7s7miveqgqu-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/LPWAN-forecast-concept.jpg"
+ alt="LPWAN"
+ width=560px
+>
+							<p>A low-power broad-area network (LPWAN) is a wireless telecommunications wide area network that allows long-range communications at a low bit rate. It is designed for connecting business or users.</p>
+              <br>
+              <table border="1">
+              <tr>
+                <th>Range</th>
+                <th>2 km to 1,000 km</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>100 Hz</th>
+              </tr>
+              <tr>
+                <th>Data transmission speed</th>
+                <th>0.3 kbit/s and 50 kbit/s</th>
+              </tr>
+              </table>
+              <br>
+              Advantages:
+								<ul>
+									<li>Low power usage</li>
+                  <li>Batteries are cost-effective</li>
+                  <li>Long-distance</li>
+								</ul>
+                <br>
+                Disadvantages:
+                <ul>
+                <li>Delay problem is serious</li>
+                <li>Low data rate</li>
+                <li>High latency</li>
+                </ul>
+						</ul>
+					</div>
+					<div id="l1sub2">
+						<h3><u>Wire</u></h3>
+            <ul>
+            <li><h4>Ethernet</h4></li>
+            </ul>
+            <img
+ src="data:image/jpeg;base64,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"
+ alt="Ethernet"
+ width=380px
+>
+						<p>Ethernet is a wired computer networking technology that is widely used in local area networks (LANs), regional area networks (MANs), and wide area networks (WANs).</p>
+						<br>
+            <table border="1">
+              <tr>
+                <th></th>
+                <th>CAT1-4</th>
+                <th>CAT5-8</th>
+              </tr>
+              <tr>
+                <th>Range</th>
+                <th>100m</th>
+                <th>100m</th>
+              </tr>
+              <tr>
+                <th>Frequency</th>
+                <th>4MHz-20MHz</th>
+                <th>100MHz-2000Mhz</th>
+              </tr>
+              <tr>
+                <th>Date transfer rate</th>
+                <th>4mbps-10gbps</th>
+                <th>100Mbps-250Gbps</th>
+              </tr>
+              </table>
+              <br>
+            Advantages:
+            <ol>
+								<li>Connection speed is high</li>
+                <li>Protection and defense</li>
+                <li>Have supreme reliability</li>
+                </ol>
+						<br>
+            Disadvantages:
+            <ol>
+            <li>lack of portability</li>
+            <li>High cost for Expandability</li>
+            <li>Installation is difficult</li>
+            </ol>
+						<br>
+					</div>
+				</div>
+				<div id="layer2">
+					<h2>Application Layer</h2>
+					<hr>
+          <ul>
+          <li><h4>Definition</h4></li>
+					<p>The application layer is in charge of supplying the user with application-specific services. It specifies uses for the Internet of Things, including smart houses, smart cities, and smart health.</p>
+					<p>The third layer is the application layer. The aim of the application layer is to bring IoT social needs and industrial technologies together. </p>
+          <li><h4>MQTT</h4></li>
+					<p>Message Stream Telemetry Transport: MQTT is a TCP-based publish/subscribe protocol. It was structured primarily as a client/server protocol by IBM. The clients are publishers/subscribers, and the server functions as a TCP broker to which the clients bind. A subject may be published or subscribed to my clients. This contact is done by the broker, whose task is to arrange subscriptions to authenticate the customer for security purposes. </p>
+          <li><h4>Application</h4></li>
+          </ul>
+          <ol>
+            <li>Near Field Communication (NFC) Payment</li>
+            <p>In the retail market, NFC is one of the fastest-growing Internet of Things applications. Customers who use NFC payment do not need to pay with cash or a card; instead, they may make contactless payments with their NFC-enabled smartphones. It limits the amount of time it takes to make a payment while still increasing certainty. On the vendor's side, all that is needed for NFC payment is an NFC payment device.</p>
+            <li>Remote Control Appliances</li>
+             <img
+ src="https://previews.123rf.com/images/macrovector/macrovector1703/macrovector170300368/74863134-smart-home-automation-system-with-remote-control-of-kitchen-appliances-comfort-and-safety-isometric-.jpg"
+ alt="remote control appliances"
+ width=400px
+>
+            <p>Many different home appliances can now be remotely controlled. Home appliances have been Wifi-enabled, ranging from light bulbs to refrigerators to fans and televisions. You can use this to monitor different functions in your home without ever leaving your bed. </p>
+          </ol>
+				</div><hr>
+				<div id="news">
+					<table align="center" width="75%">
+						<tr>
+							<td>new1</td>
+							<td>new2</td>
+							<td>new3</td>
+							<td>new4</td>
+							<td>new5</td>
+						</tr>
+					</table>
+				</div>
+				<footer class="footer">
+				<br><br><br>
+					<p align="center">
+					<span>© 2021 <a href="main.html">IIT NEWS</a></span>
+					<span>·</span>
+					<span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
+					<span>·</span>
+					<span>All rights reserved.</span>
+					</p>
+				</footer>
+			</div>
+		</div>
+		</tr></td>
+		</table>
+		<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+			<button class="top-link" id="top-link" type="button" accesskey="g" style="visibility: visible; opacity: 1;">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+					<path d="M12 6H0l6-6z"></path>
+				</svg>
+			</button>
+		</a>
+	</div>
+	</font>
+</body>
+</html>
