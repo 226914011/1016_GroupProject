@@ -6,17 +6,12 @@
 	<!--
 	Key Words
 	-->
-	<meta name = "keywords" content = "Web page, design,  
-		XHTML, tutorial, personal, help, index, form, 
-		contact, feedback, list, links, frame, deitel" />
+	<meta name = "keywords" content = "Web page, Internet, technology, science, communication, new tech" />
 
 	<!--
 	Description
 	-->
-	<meta name = "description" content = "This Web site will 
-		help you learn the basics of XHTML and Web page design 
-		through the use of interactive examples and 
-		instruction." />
+	<meta name = "description" content = "This Web site is a news portal website which hosts the latest technology news, reviews, and archives that help readers easily understand how technology affects the way they live." />
 
 	<!--
 	Link css,javascript and icon
@@ -30,9 +25,10 @@
 <!--
 	Main page
 -->
-<body id="top" background="image/we_need_you.png">
+<body id="top" background="image/we_need_you.png" BGCOLOR="white">
 	<font color="black">
 	<div class="container">
+
 		<!--
 		Icon
 		-->
@@ -48,14 +44,19 @@
 			<a href="form.html">Feedback</a>
             <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
 		</div>
+
 		<!--
 		Main content
 		-->
-        
 		<table border="0" width="100%" align="center">
             <tr>
-                <caption><h1 align= center>Feedback Form</h1></caption>
+                <!--
+                Feedback Form
+                -->
                 <table class="form" border="0" width="42px" align="center" bgcolor="white" cellspacing="10" cellpadding="5">
+                    <!--
+                    Set col width for customize
+                    -->
                     <colgroup>
                         <col width="16%">
                         <col width="17%">
@@ -64,10 +65,21 @@
                         <col width="16%">
                         <col width="17%">
                     </colgroup>
+                    <!--
+                    Caption for the form
+                    -->
+                    <br><br>
+                    <caption><h1 align= center>Feedback Form</h1></caption>
+                    <!--
+                    Set the Form by email
+                    -->
                     <!--sc.chan@cpce-polyu.edu.hk-->
                     <form action="mailto:a226914011@gmail.com" method="POST" enctype="multipart/form-data">
                     <input type = "hidden" name = "Info" value = "IIT Class 202 Group X Feedback Form"/>
                     <tr>
+                        <!--
+                        User Input name by text
+                        -->
                         <td colspan="3">
                         <label for="fname">Name<font size="2" color="red">*</font></label><br>
                         <input type="text" size="30" required id="fname" name="firstname" placeholder="Your first name">
@@ -80,6 +92,9 @@
                         </td>
                     </tr>
                     <tr>
+                        <!--
+                        User Input gender by radio button
+                        -->
                         <td colspan="1">
                         Gender<font size="2" color="red">*</font>
                         <table border="0" width="30%">
@@ -101,29 +116,47 @@
                             </tr>
                         </table>
                         </td>
+                        <!--
+                        User Input age by number
+                        -->
                         <td colspan="1">
                             <label for="age">Age</label>
                             <input type="number" name="age" id="age" min="1" max="200" step="1" size="5">
                         </td>
+                        <!--
+                        User Input email by text
+                        -->
                         <td colspan="4">
                             <label for="email">Email<font size="2" color="red">*</font></label><br>
-                            <input type="email" size="35" required name="email" id="email" placeholder="e.g. youremail@gmail.com">
+                            <input type="email" size="35" required name="email" id="email" placeholder="e.g. youremail@example.com">
                             </td>
                     </tr>
                     <tr>
+                        <!--
+                        Drop-down menu for article name
+                        -->
                         <td colspan="2">
                         <label for="aname">Article name<font size="2" color="red">*</font></label>
                         <select id="aname" name="aname">
+                            <!--
+                            Options for drop-down menu
+                            -->
                             <option value="IoT" selected>IoT</option>
                             <option value="Coming Soon" disabled>Coming Soon</option>
                         </select>
                         </td>
                         <td colspan="4">
                             <table>
+                                <!--
+                                User Input interestingness by radio button
+                                -->
                                 <tr>
                                     <label for="fun">&emsp;&emsp;&emsp;&emsp;Interestingness<font size="2" color="red">*</font></label>
                                 </tr>
                                 <tr>
+                                    <!--
+                                    Options for radio button
+                                    -->
                                     <td>Boring</td>
                                     <td><input type="radio" name="fun" id="1" value="1"></td>
                                     <td><input type="radio" name="fun" id="2" value="2"></td>
@@ -133,6 +166,9 @@
                                     <td>Interesting</td>
                                 </tr>
                                 <tr>
+                                    <!--
+                                    Marking for radio button
+                                    -->
                                     <td>&nbsp;&nbsp;</td>
                                     <td>&nbsp;&nbsp;1</td>
                                     <td>&nbsp;&nbsp;</td>
@@ -140,17 +176,30 @@
                                     <td>&nbsp;&nbsp;</td>
                                     <td>&nbsp;&nbsp;5</td>
                                 </tr>
-                            
-                            
                             </table>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="6">
-                        <label for="Message">Message<font size="2" color="red">*</font></label><br>
-                        <textarea id="Message" name="Message" rows="5" cols="50">This site is awesome!</textarea><br>
+                        <P> What is your favourite page(s)?<BR> 
+                            <INPUT TYPE="checkbox" NAME="home_p" VALUE="home_p"> 
+                            Home<BR> 
+                            <INPUT TYPE="checkbox" NAME="miain_p" VALUE="miain_p"> 
+                            Article</Article><BR> 
+                            <INPUT TYPE="checkbox" NAME="aboutus_p" VALUE="aboutus_p"> 
+                            About Us<BR> 
+                            <INPUT TYPE="checkbox" NAME="form_p" VALUE="form_p"> 
+                            Feedback Form<BR> 
                         </td>
-
+                    </tr>
+                    <tr rowspan="1">
+                        <!--
+                        User Input email by textarea
+                        -->
+                        <td colspan="6">
+                        <label for="Message">Message<font size="2" color="red">*</font></label><br>
+                        <textarea id="Message" name="Message" rows="10" cols="50">This site is awesome!</textarea><br>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="5">
@@ -167,16 +216,13 @@
             </tr>
             <tr><td>
                 <footer class="footer">
-                <br><br><br>
+                <br>
                     <p align="center">
                     <span>© 2021 <a href="main.html">IIT NEWS</a></span>
                     <span>·</span>
                     <span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
                     <span>·</span>
                     <span>All rights reserved.</span>
-                    <!--
-                    <a href="" rel="noopener" target="_blank"></a>
-                    -->
                     </p>
                 </footer>
 		    </tr></td>
