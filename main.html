@@ -38,451 +38,452 @@ NG Ching Wai    20076095A 201C
 -->
 <body id="top" BGCOLOR="white">
 	<font color="black">
-	<div class="container">
-		<!--
-		Icon
-		-->
-		<p align="center"><img src="image/icon.gif" alt="Icon"></p>
+    <div class="container">
+      <!--
+      Icon
+      -->
+      <p align="center"><img src="image/icon.gif" alt="Icon"></p>
 
-		<!--
-		Navigation bar
-		-->
-    <div class="navbar">
-      <a class="active" href="index.html">Home</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="main.html">What's new</a>
-      <a href="form.html">Feedback</a>
-      <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
-		</div>
+      <!--
+      Navigation bar
+      -->
+      <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="main.html">What's new</a>
+        <a href="form.html">Feedback</a>
+        <a href="https://www.google.com.hk" class="right" target="_blank">Search</a>
+      </div>
 
-		<!--
-    Side-navigation bar
-    -->
-    <div class="sidebar">
-      <h4 class="title"><a class="title"href="#top">IoT</a></h4>
-      <ul>
-        <hr>
-        <li class="active"><a href="#Introduction"><font color="black" size="4">Introduction</font></a></li>
-        <li><a href="#layer1"><font size="4">Network Layer</font></a></li>
+      <!--
+      Side-navigation bar
+      -->
+      <div class="sidebar">
+        <h4 class="title"><a class="title"href="#top">IoT</a></h4>
         <ul>
-          <li><a href="#l1sub1"><font size="3">&emsp;&emsp;Wireless</font></a></li>
-          <li><a href="#l1sub2"><font size="3">&emsp;&emsp;Wire</font></a></li>
+          <hr>
+          <li class="active"><a href="#Introduction"><font color="black" size="4">Introduction</font></a></li>
+          <li><a href="#layer1"><font size="4">Network Layer</font></a></li>
+          <ul>
+            <li><a href="#l1sub1"><font size="3">&emsp;&emsp;Wireless</font></a></li>
+            <li><a href="#l1sub2"><font size="3">&emsp;&emsp;Wire</font></a></li>
+          </ul>
+          <li><a href="#layer2"><font size="4">Application Layer</font></a></li>
+          <li><a href="#ref"><font size="4">Reference</font></a></li>
         </ul>
-        <li><a href="#layer2"><font size="4">Application Layer</font></a></li>
-        <li><a href="#ref"><font size="4">Reference</font></a></li>
-      </ul>
-    </div>
-		<!--
-		Main content
-		-->
-		<table border="0" width="80%" align="right">
-		<tr><td>
-			<div class="main">
-				<div class="content">
-					<h1>The Internet of Things</h1><br>
-				<div id="Introduction">
-					<h2>Introduction</h2>
-					<hr>
-					<p>The Internet of Things --<b> IoT </b>-- through its broadest definition, <span style="background-color:#EFD9D1">is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet,</span> ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.</p>
-					<p><i>Here's a video introducing IoT!</i></p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/6mBO2vqLv38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<font color="gray" size="4">
-					<p><s><i>Curator: I love this viedo very much!</i></s></p>
-					</font>
-					<br>
-				</div>
-				<div id="layer1">
-					<h2>Network Layer</h2>
-					<hr>
-					<div id="l1sub1"> 
-						<h3><u>Wireless</u></h3>
-            <ul>
-						<li><h4>RFID (Radio Frequency Identification)</h4></li>
-              <p>RFID refers to a wireless system comprised of two components: <span style="background-color:#EFD9D1">tags and readers.</span> The reader has one or more antennas that emit radio waves and receive signals back from the RFID tags. Tags, use radio waves to communicate their identity and other information to nearby readers,  <span style="background-color:#EFD9D1">can be passive or active.</span>
+      </div>
+      <!--
+      Main content
+      -->
+      <table border="0" width="80%" align="right">
+      <tr><td>
+        <div class="main">
+          <div class="content">
+            <h1>The Internet of Things</h1><br>
+            <div id="Introduction">
+              <h2>Introduction</h2>
+              <hr>
+              <p>The Internet of Things --<b> IoT </b>-- through its broadest definition, <span style="background-color:#EFD9D1">is a network of physical devices that encompasses any object or "thing" that can be linked to the Internet,</span> ranging from factory machines and equipment, sensors, and cars to mobile devices such as smartphones and smartwatches, and even home appliances that generate and share data.
               </p>
-		          <img src="image\main\RFID.png" alt="what is rfid" width=443px>
-              <table border="1">
-                <tr>
-                  <th></th>
-                  <th>Low frequency (LF)</th>
-                  <th>High frequency (HF)</th>
-                  <th>Ultra-high frequency (UHF)</th>
-                </tr>
-                <tr>
-                  <th>Range</th>
-                  <th> <10 cm </th>
-                  <th>10 cm to 1 m</th>
-                  <th> <12m </th>
-                </tr>
-                <tr>
-                  <th>Speed</th>
-                  <th>30 KHz to 300 KHz</th>
-                  <th>3 MHz to 30 MHz</th>
-                  <th>300 MHz to 3 GHz</th>
-                </tr>
-                <tr>
-                  <th>Data transfer rate</th>
-                  <th colspan="3">LF < HF < UHF</th>
-                </tr>
-                <tr>
-                  <th>Advantages</th>
-                  <th>Ability to transmit through RFID opaque materials</th>
-                  <th>Wide range of transfer rates and read distances; some ability to transmit through RFID opaque materials; allow NFC</th>
-                  <th>Extremely high read distance; Hugh data transfer rates</th>
-                </tr>
-                <tr>
-                  <th>Disadvantages</th>
-                  <th>Slower data transfer; low read distance</th>
-                  <th>Not entirely unaffected by RFID opaque materials</th>
-                  <th>Significantly impacted by RFID opaque materials</th>
-                </tr>
-              </table>
-		          <img src="image\main\RFID_1.png" alt="electromagnetic spectum" width=516px>
-            </ul>
-            <ul>
-              <li><h4>NFC (Near Field Communication)</h4></li>
-              <p>NFC enables short-range communication between compatible devices. This requires <span style="background-color:#EFD9D1">at least one </span>transmitting device, and another to receive the signal. There are two types of NFC devices, either <span style="background-color:#EFD9D1">passive or active.</span></p>
-                  <img src="image\main\NFC_1.png" alt="nfc 1" width=388px>
-		    <table border="1">
-                  <tr>
-                    <th>Range</th>
-                    <th><20 cm</th>
-                  </tr>
-                  <tr>
-                    <th>Speed</th>
-                    <th>13.56MHz</th>
-                  </tr>
-                  <tr>
-                    <th>Data transfer rate</th>
-                    <th>106 kbit/s to 424 kbit/s</th>
-                  </tr>
-                  </table>
-		    <img src="image\main\NFC_2.png" alt="nfc hid" width=322px>
-                    <br>
-                    Advantages:
-                      <ul>
-                        <li>Convenience: it merges a mobile device with wallet(s); intuitive to use</li>
-                        <li>Versatility: it is suited for a broad range of industries and uses</li>
-                        <li>Safety: passwords/PIN are used to further protect your information; more secure than a credit card magnetic strip</li>
-                      </ul>
-                      <br>
-                      Disadvantages:
-                      <ul>
-                        <li>Company agreements to use NFC</li>
-                        <li>Security: computer hacking/phone hacking</li>
-                      </ul>
-                                        
-             </ul>
-             <ul>
-              <li><h4>Zigbee</h4></li> 
-              <p>Zigbee is an <span style="background-color:#EFD9D1">IEEE 802.15.4-based </span>specification for <span style="background-color:#EFD9D1">a suite of high-level </span>communication protocols used in home automation, medical device data collection and industrial control systems.</p>
-                <img src="image\main\Zigbee_homeauto.png" alt="home automation" width=676px>
-		            <h6>Supported devices: lights, door locks, switches, smoke detectors, fans, appliances etc.</h6>
-		            <img src="image\main\Zigbee_1.jpg" alt="zigbee network" width=676px>
-		            <table border="1">
-                  <tr>
-                    <th>Range</th>
-                    <th>10 m to 20 m (indoors) / 75 m to 300 m (outdoors)</th>
-                  </tr>
-                  <tr>
-                    <th>Speed</th>
-                    <th>2.4 GHz</th>
-                  </tr>
+              <p><i>Here's a video introducing IoT!</i></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/6mBO2vqLv38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <font color="gray" size="4">
+              <p><s><i>Curator: I love this viedo very much!</i></s></p>
+              </font>
+              <br>
+            </div>
+            <div id="layer1">
+              <h2>Network Layer</h2>
+              <hr>
+              <div id="l1sub1"> 
+                <h3><u>Wireless</u></h3>
+                <ul>
+                  <li><h4>RFID (Radio Frequency Identification)</h4></li>
+                  <p>RFID refers to a wireless system comprised of two components: <span style="background-color:#EFD9D1">tags and readers.</span> The reader has one or more antennas that emit radio waves and receive signals back from the RFID tags. Tags, use radio waves to communicate their identity and other information to nearby readers,  <span style="background-color:#EFD9D1">can be passive or active.</span>
+                  </p>
+                  <img src="image\main\RFID.png" alt="what is rfid" width=443px>
+                  <table border="1">
                     <tr>
-                    <th>Data transfer rate</th>
-                    <th>20 kbps to 250 kbps</th> 
+                      <th></th>
+                      <th>Low frequency (LF)</th>
+                      <th>High frequency (HF)</th>
+                      <th>Ultra-high frequency (UHF)</th>
+                    </tr>
+                    <tr>
+                      <th>Range</th>
+                      <th> <10 cm </th>
+                      <th>10 cm to 1 m</th>
+                      <th> <12m </th>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <th>30 KHz to 300 KHz</th>
+                      <th>3 MHz to 30 MHz</th>
+                      <th>300 MHz to 3 GHz</th>
+                    </tr>
+                    <tr>
+                      <th>Data transfer rate</th>
+                      <th colspan="3">LF < HF < UHF</th>
+                    </tr>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Ability to transmit through RFID opaque materials</th>
+                      <th>Wide range of transfer rates and read distances; some ability to transmit through RFID opaque materials; allow NFC</th>
+                      <th>Extremely high read distance; Hugh data transfer rates</th>
+                    </tr>
+                    <tr>
+                      <th>Disadvantages</th>
+                      <th>Slower data transfer; low read distance</th>
+                      <th>Not entirely unaffected by RFID opaque materials</th>
+                      <th>Significantly impacted by RFID opaque materials</th>
+                    </tr>
+                  </table>
+                  <img src="image\main\RFID_1.png" alt="electromagnetic spectum" width=516px>
+                </ul>
+                <ul>
+                  <li><h4>NFC (Near Field Communication)</h4></li>
+                  <p>NFC enables short-range communication between compatible devices. This requires <span style="background-color:#EFD9D1">at least one </span>transmitting device, and another to receive the signal. There are two types of NFC devices, either <span style="background-color:#EFD9D1">passive or active.</span></p>
+                  <img src="image\main\NFC_1.png" alt="nfc 1" width=388px>
+                  <table border="1">
+                    <tr>
+                      <th>Range</th>
+                      <th><20 cm</th>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <th>13.56MHz</th>
+                    </tr>
+                    <tr>
+                      <th>Data transfer rate</th>
+                      <th>106 kbit/s to 424 kbit/s</th>
+                    </tr>
+                  </table>
+                  <img src="image\main\NFC_2.png" alt="nfc hid" width=322px>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>Convenience: it merges a mobile device with wallet(s); intuitive to use</li>
+                    <li>Versatility: it is suited for a broad range of industries and uses</li>
+                    <li>Safety: passwords/PIN are used to further protect your information; more secure than a credit card magnetic strip</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>Company agreements to use NFC</li>
+                    <li>Security: computer hacking/phone hacking</li>
+                  </ul>                          
+                </ul>
+                <ul>
+                  <li><h4>Zigbee</h4></li> 
+                  <p>Zigbee is an <span style="background-color:#EFD9D1">IEEE 802.15.4-based </span>specification for <span style="background-color:#EFD9D1">a suite of high-level </span>communication protocols used in home automation, medical device data collection and industrial control systems.</p>
+                  <img src="image\main\Zigbee_homeauto.png" alt="home automation" width=676px>
+                  <h6>Supported devices: lights, door locks, switches, smoke detectors, fans, appliances etc.</h6>
+                  <img src="image\main\Zigbee_1.jpg" alt="zigbee network" width=676px>
+                  <table border="1">
+                    <tr>
+                      <th>Range</th>
+                      <th>10 m to 20 m (indoors) / 75 m to 300 m (outdoors)</th>
+                    </tr>
+                    <tr>
+                      <th>Speed</th>
+                      <th>2.4 GHz</th>
+                    </tr>
+                      <tr>
+                      <th>Data transfer rate</th>
+                      <th>20 kbps to 250 kbps</th> 
+                    </tr>
+                  </table>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>Mesh network structure</li>
+                    <li>Low power consumption: 50 millijoules</li>
+                    <li>Lower cost: open source protocol</li>
+                    <li>Can supports a large network: up to 65000 in a single network</li>
+                    <li>Many devices to choose from: 2500 products certified and 300 million products deployed</li>
+                    <li>Allow fast communication of data and less inference unlike RF and Bluetooth</li>
+                    <li>Does not required internet</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>Protocol fragmentation</li>
+                    <li>Low data transmission rate</li>
+                    <li>Not as secure as Wi-Fi</li>
+                    <li>Might not be as great for outdoor wireless communication due to short range and limited coverage</li>
+                  </ul>
+                </ul>
+                <ul>
+                  <li><h4>Bluetooth mesh networking</h4></li>
+                  <img src="https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929" alt="bluetooth mesh iot" width=560px>
+                  <p>It is a computer mesh networking standard based on Bluetooth <span style="background-color:#EFD9D1">Low Energy.</span> It allows communication of devices over Bluetooth radio. Bluetooth 4.0 and Bluetooth 5.0 are <span style="background-color:#EFD9D1">the most commonly </span>used Bluetooth version currently.</p>
+                  <table border="1">
+                  <tr>
+                    <th></th>
+                    <th>Bluetooth 4.0</th>
+                    <th>Bluetooth 5.0</th>
+                  </tr>
+                  <tr>
+                    <th>Range</th>
+                    <th>60m</th>
+                    <th>up to 1.5km</th>
+                  </tr>
+                  <tr>
+                    <th>Speed</th>
+                    <th>25Mbit/s</th>
+                    <th>50Mbit/s</th>
+                  </tr>
+                  <tr>
+                    <th>Date transfer rate</th>
+                    <th>1Mb/s</th>
+                    <th>2Mb/s</th>
                   </tr>
                   </table>
-                     <br>
-                     Advantages:
-                      <ul>
-                        <li>Mesh network structure</li>
-                        <li>Low power consumption: 50 millijoules</li>
-                        <li>Lower cost: open source protocol</li>
-                        <li>Can supports a large network: up to 65000 in a single network</li>
-                        <li>Many devices to choose from: 2500 products certified and 300 million products deployed</li>
-                        <li>Allow fast communication of data and less inference unlike RF and Bluetooth</li>
-                        <li>Does not required internet</li>
-                      </ul>
-                      <br>
-                      Disadvantages:
-                        <ul>
-                          <li>Protocol fragmentation</li>
-                          <li>Low data transmission rate</li>
-                          <li>Not as secure as Wi-Fi</li>
-                          <li>Might not be as great for outdoor wireless communication due to short range and limited coverage</li>
-                        </ul>
-                      </ul>
-						  <ul>
-							<li><h4>Bluetooth mesh networking</h4></li>
-              <img src="https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929" alt="bluetooth mesh iot" width=560px>
-							<p>It is a computer mesh networking standard based on Bluetooth <span style="background-color:#EFD9D1">Low Energy.</span> It allows communication of devices over Bluetooth radio. Bluetooth 4.0 and Bluetooth 5.0 are <span style="background-color:#EFD9D1">the most commonly </span>used Bluetooth version currently.</p>
-              <table border="1">
-              <tr>
-                <th></th>
-                <th>Bluetooth 4.0</th>
-                <th>Bluetooth 5.0</th>
-              </tr>
-              <tr>
-                <th>Range</th>
-                <th>60m</th>
-                <th>up to 1.5km</th>
-              </tr>
-              <tr>
-                <th>Speed</th>
-                <th>25Mbit/s</th>
-                <th>50Mbit/s</th>
-              </tr>
-              <tr>
-                <th>Date transfer rate</th>
-                <th>1Mb/s</th>
-                <th>2Mb/s</th>
-              </tr>
-              </table>
-              <br>
-              Advantages:
-								<ul>
-									<li>easy to set up the network</li>
-                  <li>allows many-to-many device communication</li>
-                  <li>wide adoption of Bluetooth (many smart devices support Bluetooth)</li>
-                  <li>low power consumption</li>
-								</ul>
-                <br>
-                Disadvantages:
-                <ul>
-                <li>expensive to implement</li>
-                <li>complicated topologies</li>
-                <li>difficult to maintain network</li>
-                <li>easy to have redundant connections</li>
-                </ul>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>easy to set up the network</li>
+                    <li>allows many-to-many device communication</li>
+                    <li>wide adoption of Bluetooth (many smart devices support Bluetooth)</li>
+                    <li>low power consumption</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>expensive to implement</li>
+                    <li>complicated topologies</li>
+                    <li>difficult to maintain network</li>
+                    <li>easy to have redundant connections</li>
+                  </ul>
                 </ul>
                 <ul>
-                	<li><h4>WiFi</h4></li>
-                 	<img src="https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png" alt="wifi iot network" width=560px>
-							<p>It is a technology for the local area networking, which is based on <span style="background-color:#EFD9D1">wireless internet protocol.</span> Devices can connect through a shared access point or connect individual devices directly by radio waves.</p>
-              <br>
-              For IEEE 802.11ah standard:
-              <p>Range: up to 1000m</p>
-              <p>Frequency: sub-gigahertz band</p>
-              <p>Data transfer rate: 78 Mbps (16 MHz in Sub-1 GHz)</p>
-              <p>Power saving: Traffic Indication Map (TIM), Delivery TIM (DTIM)</p>
-                <br>
-                Advantages:
-                <ul>
-                <li>flexible than wired network</li>
-                <li>easy to set up and connect</li>
-                <li>low energy consumption (down to 100 milliwatts)</li>
-                <li>large coverage area (up to 1000m)</li>
-                <li>high data rate (up to 347 Mbps)</li>
-                </ul>
+                  <li><h4>WiFi</h4></li>
+                  <img src="https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png" alt="wifi iot network" width=560px>
+                  <p>It is a technology for the local area networking, which is based on <span style="background-color:#EFD9D1">wireless internet protocol.</span> Devices can connect through a shared access point or connect individual devices directly by radio waves.</p>
+                  <br>
+                  For IEEE 802.11ah standard:
+                  <p>Range: up to 1000m</p>
+                  <p>Frequency: sub-gigahertz band</p>
+                  <p>Data transfer rate: 78 Mbps (16 MHz in Sub-1 GHz)</p>
+                  <p>Power saving: Traffic Indication Map (TIM), Delivery TIM (DTIM)</p>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>flexible than wired network</li>
+                    <li>easy to set up and connect</li>
+                    <li>low energy consumption (down to 100 milliwatts)</li>
+                    <li>large coverage area (up to 1000m)</li>
+                    <li>high data rate (up to 347 Mbps)</li>
+                  </ul>
                 <p><span style="background-color:#EFD9D1">IoT applications: autonomous lightning, smart security, smart home thermostats</span></p>
                 <br>
-              </ul>
-              <ul>
-                	<li><h4>Z-wave</h4></li>
-                	<img src="https://www.eenewseurope.com/sites/default/files/styles/inner_article/public/sites/default/files/images/2018-01-08-s20_z_wave_smart_home_sigma_designs_700_platform_sensor.jpg?itok=lzzQA35e" alt="z-wave iot" width=560px>
-							<p>Z-Wave is <span style="background-color:#EFD9D1">a wireless networking protocol</span> for home automation. It's a mesh network that uses low-energy radio waves to connect devices.</p>
-              <br>
-              <table border="1">
-              <tr>
-                <th>Range</th>
-                <th>100meters</th>
-              </tr>
-              <tr>
-                <th>Frequency</th>
-                <th>908.42 MHz</th>
-              </tr>
-              <tr>
-                <th>Data rate</th>
-                <th>9600 bits/s and 40 kbits/s</th>
-              </tr>
-              </table>
-              <br>
-              Advantages:
-								<ul>
-									<li>Installation is simple</li>
-                  <li>No additional cabling is needed for installation</li>
-                  <li>The wireless signal is unaffected by other devices</li>
-                  <li>Efficiencies in energy</li>
-								</ul>
-                <br>
-                Disadvantages:
-                <ul>
-                <li>Distance of signal transmission is short</li>
-                <li>Number of Limited nodes is 232</li>
                 </ul>
-                <br>
-                <li><h4>5G</h4></li>
-                 <img src="https://www.microwavejournal.com/ext/resources/article-images-2019/Keysight-5G-Iot/Featr.jpg?1612491061" alt="5G IOT" width=400px>
-							<p>It is the fifth generation technology standard for <span style="background-color:#EFD9D1">cellular networks.</span> Devices are connected by radio waves through a local antenna. 5G networks can operate on up to three frequency bands including low, medium and high.</p>
-              <br>
-              <p>Frequency: </p>
-              <ul>
-              <li>Low-band 5G: 600–850 MHz</li>
-              <li>Mid-band 5G: 2.5–3.7 GHz</li>
-              <li>High-band 5G: 25–39 GHz</li>
-              </ul>
-              <p>Download speed: </p>
-              <ul>
-              <li>Low-band 5G: 30–250Mbit/s</li>
-              <li>Mid-band 5G: 100–900 Mbit/s</li>
-              <li>High-band 5G: around 1 Gbit/s</li>
-              </ul>
-              <p>Latency: down to 1ms</p>
-              <p>Range: depends on the frequency being used, can cover couple hundred kilometers</p>
-              <br>
-              Advantages:
-								<ul>
-									<li>Greater bandwidth</li>
-                  <li>Higher download speeds</li>
-                  <li>Low latency</li>
-                  <li>Can connect a large number of devices</li>
-								</ul>
-                <br>
-                Disadvantages:
                 <ul>
-                <li>It is still under process</li>
-                <li>High cost for infrastructure</li>
-                <li>Many old devices are not compatible to 5G</li>
-                <li>Lack of technological support in many places</li>
+                  <li><h4>Z-wave</h4></li>
+                  <img src="https://www.eenewseurope.com/sites/default/files/styles/inner_article/public/sites/default/files/images/2018-01-08-s20_z_wave_smart_home_sigma_designs_700_platform_sensor.jpg?itok=lzzQA35e" alt="z-wave iot" width=560px>
+                  <p>Z-Wave is <span style="background-color:#EFD9D1">a wireless networking protocol</span> for home automation. It's a mesh network that uses low-energy radio waves to connect devices.</p>
+                  <br>
+                  <table border="1">
+                    <tr>
+                      <th>Range</th>
+                      <th>100meters</th>
+                    </tr>
+                    <tr>
+                      <th>Frequency</th>
+                      <th>908.42 MHz</th>
+                    </tr>
+                    <tr>
+                      <th>Data rate</th>
+                      <th>9600 bits/s and 40 kbits/s</th>
+                    </tr>
+                  </table>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>Installation is simple</li>
+                    <li>No additional cabling is needed for installation</li>
+                    <li>The wireless signal is unaffected by other devices</li>
+                    <li>Efficiencies in energy</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>Distance of signal transmission is short</li>
+                    <li>Number of Limited nodes is 232</li>
+                  </ul>
+                  <br>
+                  <li><h4>5G</h4></li>
+                  <img src="https://www.microwavejournal.com/ext/resources/article-images-2019/Keysight-5G-Iot/Featr.jpg?1612491061" alt="5G IOT" width=400px>
+                  <p>It is the fifth generation technology standard for <span style="background-color:#EFD9D1">cellular networks.</span> Devices are connected by radio waves through a local antenna. 5G networks can operate on up to three frequency bands including low, medium and high.</p>
+                  <br>
+                  <p>Frequency: </p>
+                  <ul>
+                    <li>Low-band 5G: 600–850 MHz</li>
+                    <li>Mid-band 5G: 2.5–3.7 GHz</li>
+                    <li>High-band 5G: 25–39 GHz</li>
+                  </ul>
+                  <p>Download speed: </p>
+                  <ul>
+                    <li>Low-band 5G: 30–250Mbit/s</li>
+                    <li>Mid-band 5G: 100–900 Mbit/s</li>
+                    <li>High-band 5G: around 1 Gbit/s</li>
+                  </ul>
+                  <p>Latency: down to 1ms</p>
+                  <p>Range: depends on the frequency being used, can cover couple hundred kilometers</p>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>Greater bandwidth</li>
+                    <li>Higher download speeds</li>
+                    <li>Low latency</li>
+                    <li>Can connect a large number of devices</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>It is still under process</li>
+                    <li>High cost for infrastructure</li>
+                    <li>Many old devices are not compatible to 5G</li>
+                    <li>Lack of technological support in many places</li>
+                  </ul>
+                  <li><h4>LPWAN</h4></li>
+                  <img src="https://40uu5c99f3a2ja7s7miveqgqu-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/LPWAN-forecast-concept.jpg" alt="LPWAN" width=560px>
+                  <p>A low-power broad-area network (LPWAN) is <span style="background-color:#EFD9D1">a wireless telecommunications wide area network that allows long-range communications at a low bit rate.</span> It is designed for connecting business or users.</p>
+                  <br>
+                  <table border="1">
+                    <tr>
+                      <th>Range</th>
+                      <th>2 km to 1,000 km</th>
+                    </tr>
+                    <tr>
+                      <th>Frequency</th>
+                      <th>100 Hz</th>
+                    </tr>
+                    <tr>
+                      <th>Data transmission speed</th>
+                      <th>0.3 kbit/s and 50 kbit/s</th>
+                    </tr>
+                  </table>
+                  <br>
+                  Advantages:
+                  <ul>
+                    <li>Low power usage</li>
+                    <li>Batteries are cost-effective</li>
+                    <li>Long-distance</li>
+                  </ul>
+                  <br>
+                  Disadvantages:
+                  <ul>
+                    <li>Delay problem is serious</li>
+                    <li>Low data rate</li>
+                    <li>High latency</li>
+                  </ul>
                 </ul>
-                <li><h4>LPWAN</h4></li>
-                <img src="https://40uu5c99f3a2ja7s7miveqgqu-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/LPWAN-forecast-concept.jpg" alt="LPWAN" width=560px>
-							<p>A low-power broad-area network (LPWAN) is <span style="background-color:#EFD9D1">a wireless telecommunications wide area network that allows long-range communications at a low bit rate.</span> It is designed for connecting business or users.</p>
-              <br>
-              <table border="1">
-              <tr>
-                <th>Range</th>
-                <th>2 km to 1,000 km</th>
-              </tr>
-              <tr>
-                <th>Frequency</th>
-                <th>100 Hz</th>
-              </tr>
-              <tr>
-                <th>Data transmission speed</th>
-                <th>0.3 kbit/s and 50 kbit/s</th>
-              </tr>
-              </table>
-              <br>
-              Advantages:
-								<ul>
-									<li>Low power usage</li>
-                  <li>Batteries are cost-effective</li>
-                  <li>Long-distance</li>
-								</ul>
-                <br>
-                Disadvantages:
+              </div>
+              <div id="l1sub2">
+                <h3><u>Wire</u></h3>
                 <ul>
-                <li>Delay problem is serious</li>
-                <li>Low data rate</li>
-                <li>High latency</li>
+                  <li><h4>Ethernet</h4></li>
                 </ul>
-						</ul>
-					</div>
-					<div id="l1sub2">
-						<h3><u>Wire</u></h3>
-            <ul>
-            <li><h4>Ethernet</h4></li>
-            </ul>
-            <img src="image\home_page\Ethernet.jpg" alt="Ethernet" width=380px>
-						<p>Ethernet is a wired computer networking technology that is widely used in local area networks (LANs), regional area networks (MANs), and wide area networks (WANs).</p>
-						<br>
-            <table border="1">
-              <tr>
-                <th></th>
-                <th>CAT1-4</th>
-                <th>CAT5-8</th>
-              </tr>
-              <tr>
-                <th>Range</th>
-                <th>100m</th>
-                <th>100m</th>
-              </tr>
-              <tr>
-                <th>Frequency</th>
-                <th>4MHz-20MHz</th>
-                <th>100MHz-2000Mhz</th>
-              </tr>
-              <tr>
-                <th>Date transfer rate</th>
-                <th>4mbps-10gbps</th>
-                <th>100Mbps-250Gbps</th>
-              </tr>
-              </table>
-              <br>
-            Advantages:
-            <ol>
-								<li>Connection speed is high</li>
-                <li>Protection and defense</li>
-                <li>Have supreme reliability</li>
+                <img src="image\home_page\Ethernet.jpg" alt="Ethernet" width=380px>
+                <p>Ethernet is a wired computer networking technology that is widely used in local area networks (LANs), regional area networks (MANs), and wide area networks (WANs).</p>
+                <br>
+                <table border="1">
+                  <tr>
+                    <th></th>
+                    <th>CAT1-4</th>
+                    <th>CAT5-8</th>
+                  </tr>
+                  <tr>
+                    <th>Range</th>
+                    <th>100m</th>
+                    <th>100m</th>
+                  </tr>
+                  <tr>
+                    <th>Frequency</th>
+                    <th>4MHz-20MHz</th>
+                    <th>100MHz-2000Mhz</th>
+                  </tr>
+                  <tr>
+                    <th>Date transfer rate</th>
+                    <th>4mbps-10gbps</th>
+                    <th>100Mbps-250Gbps</th>
+                  </tr>
+                </table>
+                <br>
+                Advantages:
+                <ol>
+                  <li>Connection speed is high</li>
+                  <li>Protection and defense</li>
+                  <li>Have supreme reliability</li>
                 </ol>
-						<br>
-            Disadvantages:
-            <ol>
-            <li>lack of portability</li>
-            <li>High cost for Expandability</li>
-            <li>Installation is difficult</li>
-            </ol>
-						<br>
-					</div>
-				</div>
-				<div id="layer2">
-					<h2>Application Layer</h2>
-					<hr>
-          <ul>
-          <li><h4>Definition</h4></li>
-					<p><span style="background-color:#EFD9D1">The application layer is in charge of supplying the user with application-specific services.</span> It specifies uses for the Internet of Things, including smart houses, smart cities, and smart health.</p>
-					<p>The third layer is the application layer. The aim of the application layer is to bring IoT social needs and industrial technologies together. </p>
-          <li><h4>MQTT</h4></li>
-					<p>Message Stream Telemetry Transport:<span style="background-color:#EFD9D1"> MQTT is a TCP-based publish/subscribe protocol.</span> It was structured primarily as a client/server protocol by IBM. The clients are publishers/subscribers, and the server functions as a TCP broker to which the clients bind. A subject may be published or subscribed to my clients. This contact is done by the broker, whose task is to arrange subscriptions to authenticate the customer for security purposes. </p>
-          <li><h4>Application</h4></li>
-          <ol>
-            <li>Near Field Communication (NFC) Payment</li>
-            <p>In the retail market, <span style="background-color:#EFD9D1">NFC is one of the fastest-growing Internet of Things applications.</span> Customers who use NFC payment do not need to pay with cash or a card; instead, they may make contactless payments with their NFC-enabled smartphones. It limits the amount of time it takes to make a payment while still increasing certainty. On the vendor's side, all that is needed for NFC payment is an NFC payment device.</p>
-            <li>Remote Control Appliances</li>
-             <img src="https://previews.123rf.com/images/macrovector/macrovector1703/macrovector170300368/74863134-smart-home-automation-system-with-remote-control-of-kitchen-appliances-comfort-and-safety-isometric-.jpg" alt="remote control appliances" width=400px>
-            <p>Many different home appliances can now be remotely controlled. Home appliances have been Wifi-enabled, ranging from light bulbs to refrigerators to fans and televisions. You can use this to monitor different functions in your home without ever leaving your bed. </p>
-          </ol>
-        </ul>
-				</div><hr>
-        <div id="ref">
-          <h2>Reference</h2>
-          <ul>
-          	<li><a href="https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929">https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929</a></li>
-		        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1570870516302050">https://www.sciencedirect.com/science/article/abs/pii/S1570870516302050</a></li>
-		        <li><a href="https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png">https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png</a></li>
-		        <li><a href="https://www.sciencedirect.com/science/article/pii/S2405959516300650">https://www.sciencedirect.com/science/article/pii/S2405959516300650</a></li>
-		        <li><a href="http://near-field.blogspot.com/p/pros-cons.html">http://near-field.blogspot.com/p/pros-cons.html</a></li>
-            <li><a href="https://www.computype.com/blog/rfid-frequencies-low-high-and-ultra-high">https://www.computype.com/blog/rfid-frequencies-low-high-and-ultra-high</a></li>
-		        <li><a href="https://youtu.be/THtVeaxnd9E">https://youtu.be/THtVeaxnd9E</a></li>
-		        <li><a href="https://smarthome.university/zigbee/">https://smarthome.university/zigbee/</a></li>
-		        <li><a href="https://www.tutorialspoint.com/5g/5g_advantages_disadvantages.htm">https://www.tutorialspoint.com/5g/5g_advantages_disadvantages.htm</a></li>
-		        <li><a href="http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html">http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html</a></li>
-          </ul>
-        </div><hr>
-				<footer class="footer">
-				<br><br><br>
-					<p align="center">
-					<span>© 2021 <a href="main.html">IIT NEWS</a></span>
-					<span>·</span>
-					<span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
-					<span>·</span>
-					<span>All rights reserved.</span>
-					</p>
-				</footer>
-			</div>
-		</div>
-		</tr></td>
-		</table>
-		<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
-			<button class="top-link" id="top-link" type="button" accesskey="g" style="visibility: visible; opacity: 1;">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-					<path d="M12 6H0l6-6z"></path>
-				</svg>
-			</button>
-		</a>
-	</div>
+                <br>
+                Disadvantages:
+                <ol>
+                  <li>lack of portability</li>
+                  <li>High cost for Expandability</li>
+                  <li>Installation is difficult</li>
+                </ol>
+                <br>
+              </div>
+            </div>
+            <div id="layer2">
+              <h2>Application Layer</h2>
+              <hr>
+              <ul>
+                <li><h4>Definition</h4></li>
+                <p><span style="background-color:#EFD9D1">The application layer is in charge of supplying the user with application-specific services.</span> It specifies uses for the Internet of Things, including smart houses, smart cities, and smart health.</p>
+                <p>The third layer is the application layer. The aim of the application layer is to bring IoT social needs and industrial technologies together. </p>
+                <li><h4>MQTT</h4></li>
+                <p>Message Stream Telemetry Transport:<span style="background-color:#EFD9D1"> MQTT is a TCP-based publish/subscribe protocol.</span> It was structured primarily as a client/server protocol by IBM. The clients are publishers/subscribers, and the server functions as a TCP broker to which the clients bind. A subject may be published or subscribed to my clients. This contact is done by the broker, whose task is to arrange subscriptions to authenticate the customer for security purposes. </p>
+                <li><h4>Application</h4></li>
+                <ol>
+                  <li>Near Field Communication (NFC) Payment</li>
+                  <p>In the retail market, <span style="background-color:#EFD9D1">NFC is one of the fastest-growing Internet of Things applications.</span> Customers who use NFC payment do not need to pay with cash or a card; instead, they may make contactless payments with their NFC-enabled smartphones. It limits the amount of time it takes to make a payment while still increasing certainty. On the vendor's side, all that is needed for NFC payment is an NFC payment device.</p>
+                  <li>Remote Control Appliances</li>
+                  <img src="https://previews.123rf.com/images/macrovector/macrovector1703/macrovector170300368/74863134-smart-home-automation-system-with-remote-control-of-kitchen-appliances-comfort-and-safety-isometric-.jpg" alt="remote control appliances" width=400px>
+                  <p>Many different home appliances can now be remotely controlled. Home appliances have been Wifi-enabled, ranging from light bulbs to refrigerators to fans and televisions. You can use this to monitor different functions in your home without ever leaving your bed. </p>
+                </ol>
+              </ul>
+            </div>
+            <hr>
+            <div id="ref">
+              <h2>Reference</h2>
+              <ul>
+                <li><a href="https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929">https://www.ericsson.com/4a159f/assets/global/qbank/2017/07/24/figure-1_the-bluetooth-capillary-gateway-concept-1.jpg?w=929</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1570870516302050">https://www.sciencedirect.com/science/article/abs/pii/S1570870516302050</a></li>
+                <li><a href="https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png">https://www.researchgate.net/profile/Nurzaman-Ahmed/publication/305991052/figure/fig1/AS:406950014668800@1474035852052/IEEE-80211ah-based-network-structure-for-an-IoT-spreading-over-a-large-coverage-range.png</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S2405959516300650">https://www.sciencedirect.com/science/article/pii/S2405959516300650</a></li>
+                <li><a href="http://near-field.blogspot.com/p/pros-cons.html">http://near-field.blogspot.com/p/pros-cons.html</a></li>
+                <li><a href="https://www.computype.com/blog/rfid-frequencies-low-high-and-ultra-high">https://www.computype.com/blog/rfid-frequencies-low-high-and-ultra-high</a></li>
+                <li><a href="https://youtu.be/THtVeaxnd9E">https://youtu.be/THtVeaxnd9E</a></li>
+                <li><a href="https://smarthome.university/zigbee/">https://smarthome.university/zigbee/</a></li>
+                <li><a href="https://www.tutorialspoint.com/5g/5g_advantages_disadvantages.htm">https://www.tutorialspoint.com/5g/5g_advantages_disadvantages.htm</a></li>
+                <li><a href="http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html">http://www.ibm.com/developerworks/webservices/library/ws-mqtt/index.html</a></li>
+              </ul>
+            </div><hr>
+            <footer class="footer">
+            <br><br><br>
+              <p align="center">
+              <span>© 2021 <a href="main.html">IIT NEWS</a></span>
+              <span>·</span>
+              <span>Created by <a href="https://github.com/226914011" rel="noopener noreferrer" target="_blank">HKCC IIT Gp X</a></span>
+              <span>·</span>
+              <span>All rights reserved.</span>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </td></tr>
+      </table>
+      <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+        <button class="top-link" id="top-link" type="button" accesskey="g" style="visibility: visible; opacity: 1;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z"></path>
+          </svg>
+        </button>
+      </a>
+    </div>
 	</font>
 </body>
 </html>
